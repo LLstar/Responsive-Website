@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>详情页面</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/smoothproducts.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 顶部菜单 start-->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="" id="positionText">北京</a>
+                        <ul id="position"> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar">
+                            <li class="nav-item">特色主题
+                                <div>
+                                   <small>趣购金融</small><small>趣购会员</small><br>
+                                   <small>优惠券</small><small>陪伴计划</small><br>
+                                   <small>买什么</small><small>趣购秒杀</small><br>
+                                   <small>全球购</small><small>0元测评</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                   <small>家用电器</small><small>手机数码</small><br>
+                                   <small>精选家居</small><small>服装鞋包</small><br>
+                                   <small>美妆个护</small><small>食品生鲜</small><br>
+                                   <small>礼品鲜花</small><small>汽车用品</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                   <small>趣购金融</small><small>优惠券</small><br>
+                                   <small>话费</small><small>加油卡</small><br>
+                                   <small>火车票</small><small>旅游出行</small><br>
+                                   <small>电影票</small><small>酒店住宿</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                   <small>合作招商</small><small>服装市场</small><br>
+                                   <small>企业采购</small><small>游戏社区</small><br>
+                                   <small>智能家居</small><small>知识产权</small><br>
+                                   <small>乡村招募</small><small>校园加盟</small><br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="">免费注册</a>
+                                </li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">企业采购</a></li>
+                                <li><a href="">客户服务</a></li>
+                                <li><a href="">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">购物车</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部菜单 end-->
+    <!-- 导航条 start-->
+    <div id="header">
+        <div id="h-top" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-lg-6 col-md-6 visible-lg visible-md text-center">
+                        <!-- 搜索框 start-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="华为">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                        <!-- 搜索框 end-->
+                        <!-- 热门词汇 start -->
+                        <div class="hotwords">
+                            <ul>
+                                <li><a href="">鞋包有礼</a></li>
+                                <li><a href="">毛呢大衣</a></li>
+                                <li><a href="">约会圣诞</a></li>
+                                <li><a href="">特卖街</a></li>
+                                <li><a href="">口腔护理</a></li>
+                                <li><a href="">进口面膜</a></li>
+                                <li class="hidden-md"><a href="">洗护大牌</a></li>
+                                <li class="hidden-md"><a href="">欧莱雅</a></li>
+                            </ul>
+                        </div>
+                        <!-- 热门词汇 end -->
+                    </div>
+                    <!-- 购物车 start -->
+                    <div class=" text-center visible-md visible-lg" id="cart">
+                        <a href="cart.html">
+                            <button class="btn btn-danger" type="button">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                                <span class="badge" style="position: static;">4</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- 购物车 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航条 end-->
+    <!-- 页面详情 start-->
+    <div class="page" id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="text-center sp-wrap col-lg-4 col-md-4 col-sm-6 col-xs-8">
+                    <a href="images/1.jpg"><img src="images/1_tb.jpg" alt=""></a>
+                    <a href="images/2.jpg"><img src="images/2_tb.jpg" alt=""></a>
+                    <a href="images/3.jpg"><img src="images/3_tb.jpg" alt=""></a>
+                    <a href="images/4.jpg"><img src="images/4_tb.jpg" alt=""></a>
+                    <a href="images/5.jpg"><img src="images/5_tb.jpg" alt=""></a>
+                </div>
+                <div class="detail-list col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                    <h4 title="三星 Galaxy S8（SM-G9500）4GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待">三星 Galaxy S8（SM-G9500）4GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待</h4>
+                    <span class="d-news visible-lg visible-xs">【送无线快充！白条12期免息！】Plus会员送10000京豆！骁龙835芯片！三星S9震撼上市详情猛戳>><br>
+                  【送无线快充！白条12期免息！】Plus会员送10000京豆！骁龙835芯片！
+                  </span>
+                    <br>
+                    <div class="d-summary">
+                        惊爆价&nbsp;&nbsp;&nbsp;&nbsp;<span class="d-price">￥4999.00</span>
+                        <small>降价通知</small>
+                        <br> 促销&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i>赠品</i></br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>满额返券</i><em>&nbsp;买手机满50元返男装20元优惠劵</em>
+                    </div>
+                    增值业务&nbsp;&nbsp;&nbsp;<i>以旧换新-购机0门槛</i> &nbsp;&nbsp;
+                    <i>4G套餐18元起</i> &nbsp;&nbsp;
+                    <i class="hidden-sm">礼品包装</i>
+                    <br>
+                    <em>重量&nbsp;&nbsp;&nbsp;0.46kg</em>
+                    <br> 选择版本&nbsp;&nbsp;&nbsp;
+                    <span class="d-info">S8 64G版</span>&nbsp;&nbsp;&nbsp;<span class="d-info">分期用S8 64G版</span>
+                    <br> 购买方式&nbsp;&nbsp;&nbsp;
+                    <span class="d-info">官方标配</span>
+                    <br> 套装&nbsp;&nbsp;&nbsp;
+                    <span class="d-info">优惠套装1</span>&nbsp;&nbsp;&nbsp;<span class="d-info">优惠套装2</span>&nbsp;&nbsp;&nbsp;<span class="d-info">优惠套装3</span>&nbsp;&nbsp;&nbsp;<span class="d-info hidden-sm">优惠套装4</span>&nbsp;&nbsp;&nbsp;<span class="d-info hidden-sm">优惠套装5</span>
+                    <br> 白条分期&nbsp;&nbsp;&nbsp;
+                    <span class="d-info">不分期</span>&nbsp;&nbsp;&nbsp;<span class="d-info">￥1666.33x3期</span>&nbsp;&nbsp;&nbsp;<span class="d-info">￥833.17x6期</span>&nbsp;&nbsp;&nbsp;<span class="d-info">￥416.52x12期</span>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面详情 end-->
+    <!-- 商品详情 start-->
+    <div id="detailGoods">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li role="presentation" class="active"><a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab">商品介绍</a></li>
+                        <li role="presentation"><a href="#pack" aria-controls="pack" role="tab" data-toggle="tab">规格与包装</a></li>
+                        <li role="presentation"><a href="#service" aria-controls="service" role="tab" data-toggle="tab">售后保障</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="introduce">
+                            <ul class="t-title">
+                                <li class="t-name" title="三星（SAMSUNG）">品牌：<em>三星（SAMSUNG）</em></li>
+                            </ul>
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <li title="三星Galaxy S8">商品名称：三星Galaxy S8</li>
+                                <li title="4120319">商品编号：4120319</li>
+                                <li title="460.00g">商品毛重：460.00g</li>
+                                <li title="4GB">运行内存：4GB</li>
+                            </ul>
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <li title="中国大陆">商品产地：中国大陆</li>
+                                <li title="安卓（Android）">系统：安卓（Android）</li>
+                                <li title="薄（7mm-8.5mm）">机身厚度：薄（7mm-8.5mm）</li>
+                                <li title="800万-1599万">前置摄像头像素：800万-1599万</li>
+                            </ul>
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <li title="光学变焦">拍照特点：光学变焦</li>
+                                <li title="3000mAh-3999mAh">电池容量：3000mAh-3999mAh</li>
+                                <li title="黑色系">机身颜色：黑色系</li>
+                                <li title="1200万-1999万">后置摄像头像素：1200万-1999万</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="pack">
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <p>主体</p>
+                                <li>品牌&nbsp;&nbsp;&nbsp;&nbsp;三星（SAMSUNG）</li>
+                                <li>型号&nbsp;&nbsp;&nbsp;&nbsp;SM-G9500 </li>
+                                <li>入网型号&nbsp;&nbsp;&nbsp;&nbsp;以官网信息为准</li>
+                                <li>上市年份&nbsp;&nbsp;&nbsp;&nbsp;2017年</li>
+                                <li>上市月份&nbsp;&nbsp;&nbsp;&nbsp;5月</li>
+                            </ul>
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <p>基本信息</p>
+                                <li>机身颜色&nbsp;&nbsp;&nbsp;&nbsp;谜夜黑</li>
+                                <li>机身长度（mm）&nbsp;&nbsp;&nbsp;&nbsp;148.9</li>
+                                <li>机身宽度（mm）&nbsp;&nbsp;&nbsp;&nbsp;68.1</li>
+                                <li>机身厚度（mm）&nbsp;&nbsp;&nbsp;&nbsp;8.0</li>
+                                <li>机身重量（g）&nbsp;&nbsp;&nbsp;&nbsp;155</li>
+                            </ul>
+                            <ul class="col-md-4 col-sm-4 col-xs-4 t-title">
+                                <p>主芯片</p>
+                                <li>CPU品牌&nbsp;&nbsp;&nbsp;&nbsp;骁龙（Snapdragon)</li>
+                                <li>CPU频率&nbsp;&nbsp;&nbsp;&nbsp;2.35GHz，1.9GHz</li>
+                                <li>CPU核数&nbsp;&nbsp;&nbsp;&nbsp;八核</li>
+                                <li>CPU型号&nbsp;&nbsp;&nbsp;&nbsp;骁龙835</li>
+                                <li>内存&nbsp;&nbsp;&nbsp;&nbsp;4.0GB</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="service">
+                            <span class="glyphicon glyphicon-bookmark">厂家服务</span>
+                            <p>本产品全国联保，享受三包服务，质保期为：一年质保 如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！
+                            </p>
+                            <span class="glyphicon glyphicon-bookmark">卖家承诺</span>
+                            <p>京东平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！ 注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                            </p>
+                            <span class="glyphicon glyphicon-bookmark">正品行货</span>
+                            <p>京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票
+                            </p>
+                            <span class="glyphicon glyphicon-bookmark">全国联保</span>
+                            <p>凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！
+                            </p>
+                            <p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 商品详情 end-->
+    <!-- 更多信息 start-->
+    <div id="info">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="col-md-3 col-sm-3 hidden-xs text-left">
+                        <div class="thumbnail">
+                            <img src="images/info-02.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy S8（SM-G9500）4GB+64GB 雾屿蓝 移动联通电信4G手机 双卡双待</p>
+                                <span>￥4999.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-03.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy S8+（SM-G9550）4GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待</p>
+                                <span>￥5499.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-04.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy S8+（SM-G9550）6GB+128GB 谜夜黑 移动联通电信4G手机 双卡双待</p>
+                                <span>￥6299.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-05.jpg" alt="...">
+                            <div class="caption">
+                                <p>Apple 苹果 iPhone X（A1865）全面屏4G手机 银色 全网通  256G</p>
+                                <span>￥8838.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-06.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy Note8（SM-N9500）6GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待</p>
+                                <span>￥6988.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-07.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy S8+（SM-G9550）4GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待</p>
+                                <span>￥5499.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-08.jpg" alt="...">
+                            <div class="caption">
+                                <p>Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机</p>
+                                <span>￥8388.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-09.jpg" alt="...">
+                            <div class="caption">
+                                <p>小米MIX2 全面屏游戏手机 6GB+64GB 黑色 全网通4G手机 双卡双待</p>
+                                <span>￥2899.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-10.jpg" alt="...">
+                            <div class="caption">
+                                <p>三星 Galaxy Note8（SM-N9500）6GB+64GB 谜夜黑 移动联通电信4G手机 双卡双待</p>
+                                <span>￥6988.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-11.jpg" alt="...">
+                            <div class="caption">
+                                <p>华为 HUAWEI Mate 10 Pro 全网通 6GB+128GB 银钻灰 移动联通电信4G手机 双卡双待</p>
+                                <span>￥5399.00</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/info-12.jpg" alt="...">
+                            <div class="caption">
+                                <p>小米Note3 美颜双摄拍照手机 6GB+64GB 黑色 全网通4G手机 双卡双待</p>
+                                <span>￥1899.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="col-md-9 col-sm-9 col-xs-12 text-center" src="images/info-01.jpg" alt="">
+                    <img class="col-md-9 col-sm-9 col-xs-12 text-center" src="images/info-13.jpg" alt="">
+                    <img class="col-md-9 col-sm-9 col-xs-12 text-center" src="images/info-14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 更多信息 end-->
+    <!-- 合作伙伴 start-->
+    <div id="footer">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="footer-title text-center">
+                    <a href="">关于我们 |</a>
+                    <a href="">&nbsp;联系我们 |</a>
+                    <a href="">&nbsp;合作伙伴</a>
+                </div>
+                <div class="footer-content text-center">
+                    <span>计算机与信息工程学院</span>
+                    <span>计算机科学与技术2班</span>
+                    <span>马璐璐</span>
+                </div>
+           </div>
+       </div> 
+    </div>
+    <!-- 合作伙伴 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/smoothproducts.min.js"></script>
+<script type="text/javascript">
+/* wait for images to load */
+$(window).load(function() {
+    $('.sp-wrap').smoothproducts();
+});
+</script>

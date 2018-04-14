@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>爱家</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/family.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <!-- 雪花飘落背景 start-->
+    <div class="snow-container"></div>
+    <!-- 雪花飘落背景 end-->
+    <!-- 顶部菜单 start-->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="" id="positionText">北京</a>
+                        <ul id="position"> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar">
+                            <li class="nav-item">特色主题
+                                <div>
+                                   <small>趣购金融</small><small>趣购会员</small><br>
+                                   <small>优惠券</small><small>陪伴计划</small><br>
+                                   <small>买什么</small><small>趣购秒杀</small><br>
+                                   <small>全球购</small><small>0元测评</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                   <small>家用电器</small><small>手机数码</small><br>
+                                   <small>精选家居</small><small>服装鞋包</small><br>
+                                   <small>美妆个护</small><small>食品生鲜</small><br>
+                                   <small>礼品鲜花</small><small>汽车用品</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                   <small>趣购金融</small><small>优惠券</small><br>
+                                   <small>话费</small><small>加油卡</small><br>
+                                   <small>火车票</small><small>旅游出行</small><br>
+                                   <small>电影票</small><small>酒店住宿</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                   <small>合作招商</small><small>服装市场</small><br>
+                                   <small>企业采购</small><small>游戏社区</small><br>
+                                   <small>智能家居</small><small>知识产权</small><br>
+                                   <small>乡村招募</small><small>校园加盟</small><br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="">免费注册</a>
+                                </li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">企业采购</a></li>
+                                <li><a href="">客户服务</a></li>
+                                <li><a href="">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">购物车</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爱家<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">家装建材</a>
+                                </li>
+                                <li>
+                                    <a href="">厨卫灯具</a>
+                                </li>
+                                <li>
+                                    <a href="">床品家纺</a>
+                                </li>
+                                <li>
+                                    <a href="">特色家居</a>
+                                </li>
+                                <li>
+                                    <a href="">母婴洗护</a>
+                                </li>
+                                <li>
+                                    <a href="">妈妈专区</a>
+                                </li>
+                                <li>
+                                    <a href="">营养辅食</a>
+                                </li>
+                                <li>
+                                    <a href="">童车童床</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部菜单 end-->
+    <!-- 导航条 start-->
+    <div id="header">
+        <div id="h-top" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-lg-6 col-md-6 visible-lg visible-md text-center">
+                        <!-- 搜索框 start-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="奶粉">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                        <!-- 搜索框 end-->
+                        <!-- 热门词汇 start -->
+                        <div class="hotwords">
+                            <ul>
+                                <li><a href="">全包装修</a></li>
+                                <li><a href="">装修设计</a></li>
+                                <li><a href="">婴儿湿巾</a></li>
+                                <li><a href="">宝宝护肤</a></li>
+                                <li><a href="">涂刷辅料</a></li>
+                                <li><a href="">壁纸</a></li>
+                                <li class="hidden-md"><a href="">孕妇装</a></li>
+                                <li class="hidden-md"><a href="">有机奶粉</a></li>
+                            </ul>
+                        </div>
+                        <!-- 热门词汇 end -->
+                    </div>
+                    <!-- 购物车 start -->
+                    <div class=" text-center visible-md visible-lg" id="cart">
+                        <a href="cart.html">
+                            <button class="btn btn-danger" type="button">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                                <span class="badge" style="position: static;">4</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- 购物车 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航条 end-->
+    <!-- 轮播图 start-->
+    <div id="silder">
+        <div class="container">
+            <div class="row">
+                <!-- 左侧导航 start-->
+                <div class="col-md-2 col-lg-2 col-sm-3 hidden-xs
+                  text-left" id="silder-lf">
+                    <ul class="silder_list">
+                        <li>
+                            <a href="">家装建材</a>
+                            <br>
+                            <small>装饰材料&nbsp;电工电料</small>
+                            
+                        </li>
+                        <li>
+                            <a href="">厨卫灯具</a>
+                            <br>
+                            <small>厨卫阳台&nbsp;吸顶灯&nbsp;吊灯</small>
+                        </li>
+                        <li>
+                            <a href="">床品家纺</a>
+                            <br>
+                            <small>枕头枕芯&nbsp;窗帘窗纱</small>
+                        </li>
+                        <li>
+                            <a href="">特色家居</a>
+                            <br>
+                            <small>收纳用品&nbsp;净化除味</small>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="">母婴洗护</a>
+                            <br>
+                            <small class="hidden-sm">洗发沐浴&nbsp;日常护理</small>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <a href="">妈妈专区</a>
+                            <br>
+                            <small>孕妇护理&nbsp;产后护理</small>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <a href="">营养辅食</a>
+                            <br>
+                            <small class="hidden-md">有机奶粉&nbsp;宝宝零食</small>
+                        </li>
+                        <li class="hidden-sm hidden-xs hidden-md">
+                            <a href="">童车童床</a>
+                            <br>
+                            <small>安全座椅&nbsp;婴儿车</small>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 左侧导航 end-->
+                <!-- 广告轮播 start-->
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 text-center" id="silder_ad">
+                    <div id="main_ad" class="carousel slide" data-ride="carousel">
+                        <!-- 小圆点 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+                            <li data-target="#main_ad" data-slide-to="1"></li>
+                            <li data-target="#main_ad" data-slide-to="2"></li>
+                            <li data-target="#main_ad" data-slide-to="3"></li>
+                        </ol>
+                        <!-- 轮播图 -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/family-01.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/family-02.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/family-03.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/family-04.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 控制项 -->
+                        <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 广告轮播 end-->
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 end-->
+    <!-- 家装馆 start-->
+    <div id="home">
+        <div class="container">
+            <h2 class="text-center">家居城</h2>
+            <h3>热门爆款</h3>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-01.jpg" alt="...">
+                    <p class="h-name">元钰 客厅灯LED吸顶灯超薄现代简约长方形灯具套餐套装组合卧室灯饰个性大气客厅灯饰 大客厅95*63CM无极带遥控120瓦适20-35</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥230.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-07.jpg" alt="...">
+                    <p class="h-name">都芳（DUFA） 都芳漆 德国进口铂家内墙乳胶漆墙面漆 白色环保水性油漆涂料套装15L</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥899.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-03.jpg" alt="...">
+                    <p class="h-name">金幻 LED吸顶灯水晶灯餐厅吊灯具灯饰 5头55*38CM不含E27光源</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥349.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-04.jpg" alt="...">
+                    <p class="h-name">王大哥照明 欧式全铜灯景观庭院灯室外过道走廊阳台复古工艺防水户外壁灯3003 小号纯铜 不含灯泡</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥229.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-05.jpg" alt="...">
+                    <p class="h-name">小松鼠（squirrel） 天然气壁挂炉家用暖气片地暖燃气采暖锅炉智能升级款B5plus SP24-B5PLUS</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥998.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-08.jpg" alt="...">
+                    <p class="h-name">大自然（Nature） 大自然地板 强化复合地板 橡木元素木地板 （包安装送辅料） 橡树香逸</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥146.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-06.jpg" alt="...">
+                    <p class="h-name">东鹏（DONGPENG） 瓷砖地砖800 800地板砖客厅全抛釉防滑地砖1 天山碧玉800EFG11001  800x800</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥89.00</span>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                    <img src="images/deraction-02.jpg" alt="...">
+                    <p class="h-name">孚太（futai） 孚太亚麻墙布 卧室客厅电视背景书房无纺纯色素色壁布 简约现代无缝墙布 883-15 米色</p>
+                    <span>惊爆价：</span>
+                    <span class="h-price">￥49.00</span>
+                  </a>
+                </div>
+            </div>
+            <h3>精选品牌</h3>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="h-brand thumbnail">
+                  <img src="images/deraction-09.jpg" alt="...">
+                </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="h-brand thumbnail">
+                  <img src="images/deraction-10.jpg" alt="...">
+                </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="h-brand thumbnail">
+                  <img src="images/deraction-11.jpg" alt="...">
+                </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="h-brand thumbnail">
+                  <img src="images/deraction-12.jpg" alt="...">
+                </a>
+                </div>
+            </div>
+            <h3>精选好物</h3>
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">家居&nbsp;<span class="glyphicon glyphicon-lamp"></span></a></li>
+                    <li role="presentation"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">厨具&nbsp;<span class="glyphicon glyphicon-cutlery"></span></a></li>
+                    <li role="presentation"><a href="#home3" aria-controls="home3" role="tab" data-toggle="tab">家纺&nbsp;<span class="glyphicon glyphicon-bed"></span></a></li>
+                    <li role="presentation"><a href="#home4" aria-controls="home4" role="tab" data-toggle="tab">建材&nbsp;<span class="glyphicon glyphicon-wrench"></span></a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home1">
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-13.jpg" alt="...">
+                              <p class="h-name">元钰 客厅灯LED吸顶灯超薄现代简约长方形灯具套餐套装组合卧室灯饰个性大气客厅灯饰 大客厅95*63CM无极带遥控120瓦适20-35</p>
+                              <span class="h-price">￥230.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-14.jpg" alt="...">
+                              <p class="h-name">茶花塑料收纳箱大号整理箱收纳盒储物箱 特惠55L透明3个</p>
+                              <span class="h-price">￥179.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-15.jpg" alt="...">
+                              <p class="h-name">【满4免1】up-hunceo太阳伞 超大号黑胶防晒伞 女士遮阳伞折叠伞 晴雨伞 遇水开花 桃粉色 8骨荷叶边款（1-2人使用）</p>
+                              <span class="h-price">￥18.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-16.jpg" alt="...">
+                              <p class="h-name">【京东超市】喜家家 衣架 太空铝合金晾晒架 防滑无痕不变形衣挂衣撑衣服架子 土豪金 10只装</p>
+                              <span class="h-price">￥65.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-17.jpg" alt="...">
+                              <p class="h-name">天淑 浴室拖鞋男士女夏季防滑情侣洗澡四季家居家用地板拖鞋居家 男-灰色 42-43(适合41-42码的脚穿)</p>
+                              <span class="h-price">￥17.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/deraction-18.jpg" alt="...">
+                              <p class="h-name">全悦 创意置物架实木照片墙相框墙组合 韩式相片墙 白原胡+欧式风情画心+2个置物架</p>
+                              <span class="h-price">￥99.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="home2">
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-19.jpg" alt="...">
+                            <p class="h-name">元钰 客厅灯LED吸顶灯超薄现代简约长方形灯具套餐套装组合卧室灯饰个性大气客厅灯饰 大客厅95*63CM无极带遥控120瓦适20-35</p>
+                            <span class="h-price">￥230.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-20.jpg" alt="...">
+                            <p class="h-name">康宁VISIONS 0.8L+1.5L+2.25L晶彩透明锅三件套VS-081522/JD</p>
+                            <span class="h-price">￥¥699.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-21.jpg" alt="...">
+                            <p class="h-name">英国TOMIC/特美刻陶瓷杯带盖 马克杯情侣咖啡杯 创意杯子 白色 1316  400ML</p>
+                            <span class="h-price">￥59.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-22.jpg" alt="...">
+                            <p class="h-name">青苹果红酒杯高脚杯葡萄酒杯套装350ml6只装 EJ5635</p>
+                            <span class="h-price">￥69.90</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-23.jpg" alt="...">
+                            <p class="h-name">樱之歌清新海洋陶瓷餐盘7件套(B套餐）</p>
+                            <span class="h-price">￥148.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-24.jpg" alt="...">
+                            <p class="h-name">乐享 景德镇纯白骨瓷牛排盘子沙拉盘西餐盘刀叉4件套</p>
+                            <span class="h-price">￥69.00</span>
+                          </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="home3">
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-25.jpg" alt="...">
+                            <p class="h-name">LOVO 罗莱生活出品 四件套全棉印花床品套件 阳光下的花朵220*240cm</p>
+                            <span class="h-price">￥569.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-26.jpg" alt="...">
+                            <p class="h-name">梦洁家纺（MENDALE）床品套件 提花四件套 欧式优雅床单被罩 维多利亚的秘密 1.8米床 248*248cm</p>
+                            <span class="h-price">￥699.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-27.jpg" alt="...">
+                            <p class="h-name">水星家纺(MERCURY) 全棉印花夏被 威尼斯花园(浅蓝) 空调被夏凉被子 双人被芯 200*230cm</p>
+                            <span class="h-price">￥329.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-28.jpg" alt="...">
+                            <p class="h-name">原牧1.8m床头层水牛皮凉席 皇冠系列牛皮席软席三件套装 含枕套</p>
+                            <span class="h-price">￥2480.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-29.jpg" alt="...">
+                            <p class="h-name">LOVO罗莱生活出品 香露疏影落地睡帐 蚊帐 玉粉色1.8米床</p>
+                            <span class="h-price">￥449.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-30.jpg" alt="...">
+                            <p class="h-name">金号 床品家纺 舒特曼S1206紫灰2条装纯棉毛巾</p>
+                            <span class="h-price">￥39.90</span>
+                          </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="home4">
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-31.jpg" alt="...">
+                            <p class="h-name">东鹏瓷砖客厅地砖800 800地板砖全抛釉瓷砖 臻皇玉EFG20002【到手价 69元】 800*800MM/片</p>
+                            <span class="h-price">¥93.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-32.jpg" alt="...">
+                            <p class="h-name">圣象地板强化复合地板客厅卧室木地板环保耐磨防滑 依云小镇NDD5113全包价</p>
+                            <span class="h-price">¥128.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-33.jpg" alt="...">
+                            <p class="h-name">晨阳水漆 内墙涂料非乳胶漆 墙面漆水性漆 净味环保面漆 非油漆套装15L 竹炭家装水漆</p>
+                            <span class="h-price">¥999.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-34.jpg" alt="...">
+                            <p class="h-name">梵迪欧壁纸墙纸客厅电视背景墙3D立体现代中式卧室无纺布 咖啡色 SY87604</p>
+                            <span class="h-price">¥128.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-35.jpg" alt="...">
+                            <p class="h-name">凡十六 墙纸壁纸现代简约纯色素色环保无纺布卧室客厅电视背景墙 心悦鹅黄 立体发泡 5.3㎡/卷</p>
+                            <span class="h-price">¥128.00</span>
+                          </a>
+                        </div>
+                        <div class="col-xs-6 col-md-2 col-sm-4 home-detail">
+                            <a href="#">
+                            <img src="images/deraction-36.jpg" alt="...">
+                            <p class="h-name">祺讯 加厚pvcbiz自粘蚕丝墙纸条纹自粘墙贴卧室墙贴家具翻新背景墙纸卧室防水纯色壁纸墙纸 加厚藕粉 3m长*60cm宽</p>
+                            <span class="h-price">¥19.00</span>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 家装馆 end-->
+    <!-- 母婴专区 start-->
+    <div id="baby">
+        <div class="container">
+            <h2 class="text-center">母婴专区</h2>
+            <h3>今日大牌</h3>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/baby-01.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/baby-02.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/baby-03.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/baby-04.jpg" alt="...">
+                    </a>
+                </div>
+            </div>
+            <h3>妈妈专区</h3>
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#mother1" aria-controls="mother1" role="tab" data-toggle="tab">孕妇护肤</a></li>
+                    <li role="presentation"><a href="#mother2" aria-controls="mother2" role="tab" data-toggle="tab">孕妇必备</a></li>
+                    <li role="presentation"><a href="#mother3" aria-controls="mother3" role="tab" data-toggle="tab">孕妇补品</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="mother1">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-05.jpg" alt="...">
+                              <p class="h-name">十月妈咪 孕妇护肤品  孕妈保湿润唇膏 孕妇化妆品专用 支</p>
+                              <span class="h-price">￥59.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-06.jpg" alt="...">
+                              <p class="h-name">京润珍珠 孕妇保湿乳液120ml孕妈专用护肤保湿乳 哺乳期专用</p>
+                              <span class="h-price">￥179.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-07.jpg" alt="...">
+                              <p class="h-name">耶丽娅孕妇护肤品套装 孕妈美容孕妇专用护肤品天然套装滋润保湿孕妇化妆品套装</p>
+                              <span class="h-price">￥188.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-08.jpg" alt="...">
+                              <p class="h-name">恩姆花园 羊奶美肌霜50ml 孕妇护肤品孕妈面霜 保湿补水 滋润皮肤 舒缓老化 淡化</p>
+                              <span class="h-price">￥238.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-09.jpg" alt="...">
+                              <p class="h-name">子初孕妇橄榄油产前产后修护孕纹按摩油孕妈专用淡化肥胖纹护肤品</p>
+                              <span class="h-price">￥28.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-10.jpg" alt="...">
+                              <p class="h-name">子初 孕妇护手霜滋润保湿 孕妈天然护肤滋养蜂蜜护手霜 孕妇可用 50g</p>
+                              <span class="h-price">￥15.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="mother2">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-11.jpg" alt="...">
+                              <p class="h-name">抱抱熊（bébéar）婴儿背带 透气双肩多功能抱婴腰凳 宝宝背带四季透气款 C05海军蓝</p>
+                              <span class="h-price">￥159.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-12.jpg" alt="...">
+                              <p class="h-name">三美婴（SUNVENO） 三美婴妈咪包单双肩背包手提多功能大容量时尚妈妈包 天马星空大包</p>
+                              <span class="h-price">￥149.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-13.jpg" alt="...">
+                              <p class="h-name">然雅 婴儿背带腰凳 新生儿前抱式多功能双肩背带 宝宝四季通用透气背带 抱孩子夏季 Y128-樱花粉</p>
+                              <span class="h-price">￥138.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-14.jpg" alt="...">
+                              <p class="h-name">英国泰迪 婴儿学步带 宝宝儿童小孩学走路安全透气防摔防勒四季通用 薄荷绿</p>
+                              <span class="h-price">￥78.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-15.jpg" alt="...">
+                              <p class="h-name">天才一叮育儿背巾西尔斯新生儿横抱式婴儿背带宝宝背巾初生儿前抱式哺乳抱巾多功能纯棉小孩抱带巾 1027-椰树花</p>
+                              <span class="h-price">￥135.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-16.jpg" alt="...">
+                              <p class="h-name">HIMIBABY 多功能时尚妈咪包外出双肩包大容量母婴斜跨包待产手提单肩背包 LD-22烟灰色</p>
+                              <span class="h-price">￥139.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="mother3">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-17.jpg" alt="...">
+                              <p class="h-name">安满（Anmum）智孕宝 孕妇配方奶粉800克（新西兰原装进口）</p>
+                              <span class="h-price">￥168.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-18.jpg" alt="...">
+                              <p class="h-name">港版惠氏Materna孕产妇叶酸综合维生素 100粒/瓶 （意大利原装进口）</p>
+                              <span class="h-price">￥178.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-19.jpg" alt="...">
+                              <p class="h-name">乐佳善优美国原装进口DHA藻油软胶囊马泰克DHA孕产妇型45粒</p>
+                              <span class="h-price">￥299.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-20.jpg" alt="...">
+                              <p class="h-name">
+                                    和月鑫 坐月子营养套餐汤料包 月子餐 月子汤产后人流小产调理炖品煲汤料 25款35包（内含生化汤） 产后护理</p>
+                              <span class="h-price">￥269.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-21.jpg" alt="...">
+                              <p class="h-name">君宝康孕妇钙片韵妇盖 进口钙源 孕妇哺乳期妈妈专用补钙 天然牛乳钙咀嚼片60片 好吃易吸收</p>
+                              <span class="h-price">￥75.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-22.jpg" alt="...">
+                              <p class="h-name">汤臣倍健 多种维生素矿物质片(孕妇型) 1240mg*90片</p>
+                              <span class="h-price">￥159.00</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="margin-top: 350px;">营养辅食</h3>
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#baby1" aria-controls="baby1" role="tab" data-toggle="tab">有机奶粉</a></li>
+                    <li role="presentation"><a href="#baby2" aria-controls="baby2" role="tab" data-toggle="tab">宝宝零食</a></li>
+                    <li role="presentation"><a href="#baby3" aria-controls="baby3" role="tab" data-toggle="tab">日常必备</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="baby1">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-23.jpg" alt="...">
+                              <p class="h-name">美素力（frisolac）金装婴儿配方奶粉 1段（0-6个月婴儿适用） 900克（荷兰原装进口）</p>
+                              <span class="h-price">￥249.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-24.jpg" alt="...">
+                              <p class="h-name">惠氏启赋（Wyeth illuma）婴儿配方奶粉 1段 900克（罐装）新升级</p>
+                              <span class="h-price">￥398.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-25.jpg" alt="...">
+                              <p class="h-name">诺优能Nutrilon 儿童配方奶粉4段800g（荷兰进口）36-72个月</p>
+                              <span class="h-price">￥188.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-26.jpg" alt="...">
+                              <p class="h-name">合生元(BIOSTIME)金装学龄前儿童配方奶粉4段（3岁或以上儿童适用） 900g（欧洲原罐进口）</p>
+                              <span class="h-price">￥238.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-27.jpg" alt="...">
+                              <p class="h-name">Arla 宝贝与我（Baby&me）有机幼儿配方奶粉3段（12-36个月幼儿适用）800g（丹麦原装进口）</p>
+                              <span class="h-price">￥358.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-28.jpg" alt="...">
+                              <p class="h-name">英氏思美乐婴儿配方奶粉1段 0-6个月婴儿适用 添加益生菌和结构脂 丹麦原罐原装进口 1段1300g</p>
+                              <span class="h-price">￥388.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="baby2">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-29.jpg" alt="...">
+                              <p class="h-name">方广 儿童零食 肉松 钙铁锌猪肉酥肉粉松 100g（10小袋分装）</p>
+                              <span class="h-price">￥39.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-30.jpg" alt="...">
+                              <p class="h-name">嘉宝Gerber婴幼儿辅食 有机草莓红莓酸奶溶豆宝宝零食 三段 8个月以上 28g 美国进口</p>
+                              <span class="h-price">￥38.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-31.jpg" alt="...">
+                              <p class="h-name">亨氏 (Heinz) 牛奶磨牙棒 (6-36个月适用)64g</p>
+                              <span class="h-price">￥25.50</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-32.jpg" alt="...">
+                              <p class="h-name">英氏健恩小小馒头2罐 宝宝小奶豆磨牙饼干儿童零食小蛋酥入口即化零食 4罐送饼干</p>
+                              <span class="h-price">￥39.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-33.jpg" alt="...">
+                              <p class="h-name">欧瑞园 宝宝零食 草莓味 益生菌 酸奶溶豆豆18g</p>
+                              <span class="h-price">￥26.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-34.jpg" alt="...">
+                              <p class="h-name">英氏营养肉酥 宝宝肉松 宝宝肉酥儿童零食100g牛肉酥儿童零食小孩食品 买2罐送面条小馒头</p>
+                              <span class="h-price">￥42.33</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="baby3">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-35.jpg" alt="...">
+                              <p class="h-name">美国童年时光CHILDLIFE钙镁锌婴儿幼儿童补钙宝宝补锌液体钙 6个月以上</p>
+                              <span class="h-price">￥142.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-36.jpg" alt="...">
+                              <p class="h-name">Bio Island 佰澳朗德 比奥岛 孕妇专用DHA海藻油 60粒/瓶 孕妇备孕期-哺乳期</p>
+                              <span class="h-price">￥145.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-37.jpg" alt="...">
+                              <p class="h-name">Bio Island 佰澳朗德 比奥岛 赖氨酸黄金助长素1段  150g/瓶 4个月以上</p>
+                              <span class="h-price">￥139.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-38.jpg" alt="...">
+                              <p class="h-name">佳思敏nature's way复合维生素维生素D+钙软糖儿童钙补钙软糖 澳洲进口60粒/瓶</p>
+                              <span class="h-price">￥72.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-39.jpg" alt="...">
+                              <p class="h-name">伊可新 维生素AD滴剂 胶囊型50粒 （佝偻病 夜盲症 手足抽搐）</p>
+                              <span class="h-price">￥169.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-40.jpg" alt="...">
+                              <p class="h-name">英吉利（yingjili）乳钙元一盒装 30粒</p>
+                              <span class="h-price">￥79.00</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="margin-top: 280px;">童车童床</h3>
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#babyCar1" aria-controls="babyCar1" role="tab" data-toggle="tab">婴儿推车</a></li>
+                    <li role="presentation"><a href="#babyCar2" aria-controls="babyCar2" role="tab" data-toggle="tab">安全座椅</a></li>
+                    <li role="presentation"><a href="#babyCar3" aria-controls="babyCar3" role="tab" data-toggle="tab">童床餐椅</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="babyCar1">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-41.jpg" alt="...">
+                              <p class="h-name">gb好孩子婴儿推车 双向平躺全蓬避震四轮婴儿手推车 C309-H-M451BB 淡蓝</p>
+                              <span class="h-price">￥399.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-42.jpg" alt="...">
+                              <p class="h-name">TEKNUM 婴儿推车高景观童车 宝宝可坐可平躺双向避震折叠BB轻便手推车 酒红色</p>
+                              <span class="h-price">￥428.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-43.jpg" alt="...">
+                              <p class="h-name">宝宝好婴儿推车c3摇马双向宝宝推车儿童推车手推车夏季婴儿车推车蓝色</p>
+                              <span class="h-price">￥188.80</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-44.jpg" alt="...">
+                              <p class="h-name">hd小龙哈彼 婴儿推车铝合金车架轻便可折叠避震宝宝儿童手推伞车 星空蓝LD362-T306</p>
+                              <span class="h-price">￥249.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-45.jpg" alt="...">
+                              <p class="h-name">智儿乐 婴儿推车超轻便携高景观可坐可躺避震伞车折叠宝宝婴儿车 卡其色彩管旗舰版</p>
+                              <span class="h-price">￥189.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-46.jpg" alt="...">
+                              <p class="h-name">贝丽可（belecoo） 婴儿推车高景观可坐可平躺 双向避震宝宝童车轻便折叠手推婴儿车 土豪金加州阳光【四轮橡胶防爆】</p>
+                              <span class="h-price">￥388.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="babyCar2">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-47.jpg" alt="...">
+                              <p class="h-name">gb好孩子汽车儿童安全座椅CS901-N-K105 红灰 9-36kg（约9个月-12岁）</p>
+                              <span class="h-price">￥479.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-48.jpg" alt="...">
+                              <p class="h-name">宝贝第一Babyfirst汽车儿童安全座椅9月-12岁 铠甲舰队尊享版ISOFIX3C认证 深海蓝</p>
+                              <span class="h-price">￥1280.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-49.jpg" alt="...">
+                              <p class="h-name">巧儿宜（JOIE） 英国Joie巧儿宜汽车儿童安全座椅isofix9个月-12岁盖世战神 中国红</p>
+                              <span class="h-price">￥1120.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-50.jpg" alt="...">
+                              <p class="h-name">德国怡戈（Ekobebe） 汽车儿童安全座椅 增高垫 宝宝坐垫EKO-008 适用3岁-12岁 isofix硬接口 灰色</p>
+                              <span class="h-price">￥269.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-51.jpg" alt="...">
+                              <p class="h-name">宝得适 百代适britax 宝宝汽车儿童安全座椅 头等舱白金版 正反向安装适合约0-4岁</p>
+                              <span class="h-price">￥1399.90</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-52.jpg" alt="...">
+                              <p class="h-name">zazababy 儿童安全座椅 isofix接口360度旋转婴儿宝宝汽车座椅0-12岁 精灵骑士360° 紫色0-12岁</p>
+                              <span class="h-price">￥1599.00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="babyCar3">
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-53.jpg" alt="...">
+                              <p class="h-name">gb好孩子多功能环保实木摇篮婴儿床 MC306-J311</p>
+                              <span class="h-price">￥639.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-54.jpg" alt="...">
+                              <p class="h-name">呵宝（HOPE） 婴儿床实木无漆宝宝床可拼接BB摇篮床多功能儿童床 床+蚊帐+配套五件套</p>
+                              <span class="h-price">￥389.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-55.jpg" alt="...">
+                              <p class="h-name">巴布豆（BOBDOG） 【裸床送199元床垫】巴布豆日本床多功能宝宝床实木婴儿床 日本款婴儿床（带画板）</p>
+                              <span class="h-price">￥1399.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail">
+                            <a href="#">
+                              <img src="images/baby-56.jpg" alt="...">
+                              <p class="h-name">史威比（Sweeby） 婴儿床多功能欧式宝宝床可折叠新生儿bb床摇篮游戏床童床 藏蓝色（高配版-宫廷蚊帐）</p>
+                              <span class="h-price">￥1289.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-57.jpg" alt="...">
+                              <p class="h-name">圣宝罗（sanpaulo） 婴儿床宝宝电动摇床 摇篮床摇椅睡篮 BB床带音乐 卡其色旗舰款+床垫+枕头+蚊帐+遥控+USB播曲</p>
+                              <span class="h-price">￥428.00</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-sm-4 home-detail hidden-md hidden-lg">
+                            <a href="#">
+                              <img src="images/baby-58.jpg" alt="...">
+                              <p class="h-name">VALDERA 婴儿床多功能可折叠摇篮床新生儿便携式宝宝床游戏bb床带蚊帐 棕色杏色豪华款</p>
+                              <span class="h-price">￥899.00</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 母婴专区 end-->
+    <!-- 合作伙伴 start-->
+    <div id="footer">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="footer-title text-center">
+                    <a href="">关于我们 |</a>
+                    <a href="">&nbsp;联系我们 |</a>
+                    <a href="">&nbsp;合作伙伴</a>
+                </div>
+                <div class="footer-content text-center">
+                    <span>计算机与信息工程学院</span>
+                    <span>计算机科学与技术2班</span>
+                    <span>马璐璐</span>
+                </div>
+           </div>
+       </div> 
+    </div>
+    <!-- 合作伙伴 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript" src="js/main.js"></script>

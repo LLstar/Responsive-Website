@@ -1,0 +1,93 @@
+//左侧导航
+#silder {}
+
+#silder .container {
+	margin-top: 20px;
+}
+
+#silder #silder-lf {
+	padding: 0;
+}
+
+#silder #silder-lf .silder_list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#silder #silder-lf .silder_list li {
+	background-color: rgb(255,127,36);
+	list-style: none;
+	padding: 6px;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li:hover {
+	background-color: rgba(255,127,36,0.7);
+}
+
+#silder #silder-lf .silder_list li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li a:hover {
+	color: #f10215;
+}
+
+//品牌精选
+#Brand {}
+
+#Brand #least {
+	margin-top: 30px;
+}
+
+//运动鞋包
+#Shoes {}
+
+#Shoes #shoes img {
+	margin: 8px auto;
+}
+
+//户外骑行
+#Cycling {}
+
+#Cycling .container {
+	margin-top: 30px;
+}
+
+#Cycling #cycling img {
+	margin: 8px auto;
+}
+
+//体育健身
+#Sport {}
+
+#Sport .container {
+	margin-top: 30px;
+}
+
+#Sport #sports img {
+	margin: 8px auto;
+}
+
+//口腔健康
+#Mouth {}
+
+#Mouth .container {
+	margin-top: 30px;
+}
+
+#Mouth #mouth img {
+	margin: 8px auto;
+}
+
+//保健滋补
+#Health {}
+
+#Health .container {
+	margin-top: 30px;
+}
+
+#Health #healths img {
+	margin: 8px auto;
+}

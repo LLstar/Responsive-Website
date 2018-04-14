@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+    <div class="hidden-xs" id="pagepiling">
+        <div class="section" id="section1">
+            <div class="container">
+                <div class="row">
+                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady01.png">
+                    <h1 class="hidden-xs">随时随地 一键购物</h1>
+                    <span class="hidden-xs">妈妈再也不用担心我抢不到货了！</span>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="container">
+                <div class="row">
+                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady02.png">
+                    <h1 class="hidden-xs">专项特卖 惊喜不停</h1>
+                    <span class="hidden-xs">不用担心，品牌特卖等着你！</span>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="container">
+                <div class="row">
+                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady03.png">
+                    <h1 class="hidden-xs">随时随地 查看物流</h1>
+                    <span class="hidden-xs">今天的包裹到哪儿了？</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pull-right col-md-7 col-sm-7 col-xs-12" id="login" style="margin-top: 20%;z-index: 999;">
+        <div class="container">
+            <div class="col-md-6 col-sm-6">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputName" class="col-sm-3 control-label"><span class="glyphicon glyphicon-user"></span>用户名:</label>
+                        <div class="col-sm-9">
+                            <input type="textname" class="form-control" id="inputName" placeholder="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-3 control-label"><span class="glyphicon glyphicon-lock"></span>密码:</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">记住用户名
+                                </label>
+                                <label class="pull-right">
+                                    <a href="register.html"> 免费注册 </a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-danger btn-md" id="loginBtn">&nbsp;&nbsp;登录&nbsp;&nbsp;</button>
+                            <a class="btn btn-success btn-md pull-right" href="index.html" role="button">&nbsp;&nbsp;返回首页&nbsp;&nbsp;</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#pagepiling').pagepiling({
+        sectionsColor: ['#c5dfd5', '#c5dfd5', '#c5dfd5'],
+        navigation: {
+            'position': 'right',
+            'tooltips': ['一键购物', '惊喜不断', '查看物流']
+        }
+    });
+
+    // 登录验证
+    var loginBtn = $('#loginBtn');
+    var username = $('#inputName');
+    var password = $('#inputPassword');
+    var userText, passText, flag = true;
+    console.log(username.length);
+
+    loginBtn.on('click', function() {
+        userText = $('#inputName').val();
+        passText = $('#inputPassword').val();
+        console.log($('#inputName'))
+        if (!userText) {
+            alert('用户名不能为空');
+            flag = false;
+        } else if (userText.length < 5) {
+            alert('用户名长度不能少于5位');
+            flag = false;
+        } else {
+            flag = true;
+        }
+        if (!passText) {
+            alert('密码不能为空');
+            flag = false;
+        } else if (passText.length < 8) {
+            alert('密码长度不能少于8位');
+            flag = false;
+        } else if (!(/^[a-zA-Z].+/.test(passText))) {
+            alert('密码要以字母开头');
+            flag = false;
+        } else {
+            flag = true;
+        }
+        console.log(flag)
+        // for(var i=0;i<$('.formSubmit').length;i++){
+
+        // }
+        return flag;
+        // return false
+    })
+
+});
+</script>

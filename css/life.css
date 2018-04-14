@@ -1,0 +1,391 @@
+/*左侧导航*/
+#silder {}
+
+#silder .container {
+	margin-top: 20px;
+}
+
+#silder #silder-lf {
+	padding: 0;
+}
+
+#silder #silder-lf .silder_list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#silder #silder-lf .silder_list li {
+	background-color: rgb(82,139,139);
+	list-style: none;
+	padding: 5px;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li:nth-child(8) {
+       padding-top: 0;
+       padding-bottom: 0;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+	#silder #silder-lf .silder_list li:nth-child(7) {
+       padding-top: 0;
+       padding-bottom: 0;  
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+	#silder #silder-lf .silder_list li:nth-child(5) {
+       padding-top: 0;
+       padding-bottom: 0;  
+    }
+}
+
+#silder #silder-lf .silder_list li:hover {
+	background-color: rgba(82,139,139,0.5);
+}
+
+#silder #silder-lf .silder_list li a {
+	text-decoration: none;
+	// font-size: 15px;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li a:hover {
+	color: #f10215;
+}
+
+/*品牌特卖*/
+#brand {}
+
+#brand .container {
+	margin-top: 10px;
+}
+
+#brand .container .row div {
+	padding: 0;
+	margin-top: 20px;
+}
+
+#brand .container .row div img:hover {
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+	transition: transform 0.65s;
+}
+
+@media screen and (min-width:517px) and (max-width:556px) {
+	#brand .container .row div img {
+		width: 12em;
+	}
+}
+
+@media screen and (min-width:436px) and (max-width:516px) {
+	#brand .container .row div img {
+		width: 10em;
+	}
+}
+
+@media screen and (min-width:357px) and (max-width:435px) {
+	#brand .container .row div img {
+		width: 8em;
+	}
+}
+
+@media screen and (min-width:100px) and (max-width:356px) {
+	#brand .container .row div img {
+		width: 7em;
+	}
+}
+
+/*粮油调味*/
+#oil {}
+
+#oil .container {
+	margin-top: 20px;
+}
+
+#oil .container h3 {
+	text-align: center;
+}
+
+#oil .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#oil .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#oil .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#oil .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#oil .container .row div .oil-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#oil .container .row div .oil-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#oil .container .row div .oil-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+/*牛奶水饮*/
+#milk {}
+
+#milk .container {
+	margin-top: 20px;
+}
+
+#milk .container h3 {
+	text-align: center;
+}
+
+#milk .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#milk .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#milk .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#milk .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#milk .container .row div .milk-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#milk .container .row div .milk-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#milk .container .row div .milk-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+/*休闲零食*/
+#sock {}
+
+#sock .container {
+	margin-top: 20px;
+}
+
+#sock .container h3 {
+	text-align: center;
+}
+
+#sock .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#sock .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#sock .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#sock .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#sock .container .row div .sock-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#sock .container .row div .sock-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#sock .container .row div .sock-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+/*时令生鲜*/
+#fresh {}
+
+#fresh .container {
+	margin-top: 20px;
+}
+
+#fresh .container h3 {
+	text-align: center;
+}
+
+#fresh .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#fresh .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#fresh .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#fresh .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#fresh .container .row div .fresh-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#fresh .container .row div .fresh-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#fresh .container .row div .fresh-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+/*特色书店*/
+#special {}
+
+#special .container {
+	margin-top: 20px;
+}
+
+#special .container h3 {
+	text-align: center;
+}
+
+#special .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#special .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#special .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#special .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#special .container .row div .special-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#special .container .row div .special-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#special .container .row div .special-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+/*家居生活*/
+#home {}
+
+#home .container {
+	margin-top: 20px;
+}
+
+#home .container h3 {
+	text-align: center;
+}
+
+#home .container .row {
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+#home .container .row div {
+	padding: 0 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#home .container .row div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#home .container .row div img {
+	margin: auto;
+	margin-top: 5px;
+}
+
+#home .container .row div .home-detail {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#home .container .row div .home-money {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}
+
+#home .container .row div .home-cart {
+	font-weight: 700;
+	color: #f10215;
+	font-size: 20px;
+}

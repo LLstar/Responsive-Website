@@ -1,0 +1,195 @@
+body {
+	min-width: 362px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+a{color: #2fa0ec;text-decoration: none;outline: none;}
+a:hover,a:focus{color:#74777b;}
+
+.page {
+	padding: 5px 30px 30px 30px;
+	/*max-width: 800px;*/
+	margin: 0 auto;
+	/*background: #fff;*/
+	color: #555;
+}
+img {
+	border: none;
+}
+a:link,
+a:visited {
+	color: #F0353A;
+}
+a:hover {
+	color: #8C0B0E;
+}
+ul {
+	overflow: hidden;
+}
+
+/*页面详情*/
+#detail {}
+
+#detail .container {
+	margin-top: 30px;
+}
+
+#detail .container .sp-wrap a {
+	margin: auto 2px;
+	float: left;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	#detail .container .sp-wrap a:nth-child(6) {
+		display: none;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 587px) {
+	#detail .container .sp-wrap a:nth-child(6) {
+		display: none;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 513px) {
+	#detail .container .sp-wrap a:nth-child(5) {
+		display: none;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 436px) {
+	#detail .container .sp-wrap a:nth-child(4) {
+		display: none;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 624px) {
+	#detail .container .sp-wrap a {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+#detail .container .detail-list h4 {
+	height: 20px;
+	overflow: hidden;
+}
+
+#detail .container .detail-list .d-news {
+	color: #f10215;
+}
+
+#detail .container .detail-list .d-summary {
+	background-color: #c6c6c6;
+	/*margin-top: 15px;*/
+	padding-left: 10px;
+}
+
+#detail .container .detail-list .d-price {
+	color: #f10215;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+#detail .container .detail-list .d-summary small {
+	color: #005aa0;
+	margin-left: 10px;
+}
+
+#detail .container .detail-list .d-summary small:hover {
+	color: #b32d36;
+}
+
+#detail .container .detail-list .d-summary i {
+	color: #df3033;
+	border: 1px solid #df3033;
+	padding: 2px;
+	font-style: normal;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+#detail .container .detail-list .d-summary em {
+	font-style: normal;
+}
+
+#detail .container .detail-list i {
+	font-style: normal;
+	color: #005aa0;
+}
+
+#detail .container .detail-list em {
+	font-style: normal;
+}
+
+#detail .container .detail-list .d-info {
+	border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+#detail .container .detail-list .d-info:hover {
+	border: 1px solid #df3033;
+}
+
+//商品详情
+#detailGoods {}
+
+#detailGoods .container {
+	margin-top: 20px;
+}
+
+#detailGoods .container .t-title {
+	list-style: none;
+	margin-top: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#detailGoods .container .t-title:hover {
+	cursor: pointer;
+}
+
+#detailGoods .container .t-title em {
+	color: #005aa0;
+	font-style: normal;
+}
+
+#detailGoods .container #pack p {
+	color: #005aa0;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+#detailGoods .container #service span {
+	color: #df3033;
+	font-size: 20px;
+	margin: 20px;
+}
+
+//更多信息
+#info {}
+
+#info .container {
+	margin-top: 30px;
+}
+
+#info .container .row .thumbnail p {
+	height: 40px;
+	overflow: hidden;
+}
+
+#info .container .row .thumbnail span {
+	color: #df3033;
+	font-size: 20px;
+}

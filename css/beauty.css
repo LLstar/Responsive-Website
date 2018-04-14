@@ -1,0 +1,182 @@
+//导航条
+#header #h-bottom {}
+
+#header #h-bottom .navbar {
+    margin-top: 35px;
+}
+
+//更多好物
+#moreProduct {}
+
+#moreProduct h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#moreProduct .tab_product .tab-item {
+    text-decoration: none;
+}
+
+#moreProduct .tab_product .tab-item:hover p {
+    background-color: #b32d36;
+    color: #fff;
+}
+
+#moreProduct .tab_product .tab-item:hover span {
+    background-color: #b32d36;
+    color: #fff;
+}
+
+#moreProduct .tab_product .tab-item p {
+    margin-top: 10px;
+    color: #000;
+}
+
+#moreProduct .tab_product .tab-item p span {
+    color: #b32d36;
+    font-weight: 700;
+}
+
+@media screen and (min-width:564px) and (max-width:654px) {
+    #moreProduct ul li:nth-child(8) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:470px) and (max-width:564px) {
+    #moreProduct ul li:nth-child(8) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(7) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:385px) and (max-width:474px) {
+    #moreProduct ul li:nth-child(8) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(7) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:295px) and (max-width:385px) {
+    #moreProduct ul li:nth-child(8) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(7) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(6) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:294px) {
+    #moreProduct ul li:nth-child(8) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(7) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(6) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(5) {
+        display: none;
+    }
+
+    #moreProduct ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+//服饰馆
+#clothes {}
+
+#clothes h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ae00ae;
+}
+
+#clothes .clothes-brand {
+    background-color: rgba(34, 134, 56, .5);
+}
+
+#clothes .clothes-brand h3 {
+    margin: 30px auto;
+}
+
+//更多上新
+#clothes .clothes-brand .new-product {}
+
+#clothes .clothes-brand .new-product .product {
+    margin-bottom: 10px;
+}
+
+.product .p-Item .p-Name {
+    margin-top: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+}
+
+.product .p-Item img {
+    transform: scale(1, 1);
+    transition: all 1.2s ease 0s;
+    z-index: 3;
+}
+
+.product .p-Item:hover img {
+    opacity: 0.8;
+    transform: scale(1.1, 1.1);
+    transition: all 1.2s ease 0s;
+}
+
+.product .p-Item span {
+    color: #f10215;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product .p-Item:hover {
+    text-decoration: none;
+    color: #000;
+}   
+
+
+//美妆馆
+#beauty {}
+
+#beauty h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0000e3;
+}
+
+#beauty .beauty-brand {
+    background-color: rgba(133, 123, 156, .5);
+}
+
+#beauty .beauty-brand .beauty-product .product {
+    margin-bottom: 10px;
+}
+

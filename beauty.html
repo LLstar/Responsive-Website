@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>爱"尚"美</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/least.min.css">
+    <link rel="stylesheet" type="text/css" href="css/beauty.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 雪花飘落背景 start-->
+    <div class="snow-container"></div>
+    <!-- 雪花飘落背景 end-->
+    <!-- 顶部菜单 start-->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="" id="positionText">北京</a>
+                        <ul id="position"> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar" style="padding-left: 40px;">
+                            <li class="nav-item">特色主题
+                                <div>
+                                   <small>趣购金融</small><small>趣购会员</small><br>
+                                   <small>优惠券</small><small>陪伴计划</small><br>
+                                   <small>买什么</small><small>趣购秒杀</small><br>
+                                   <small>全球购</small><small>0元测评</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                   <small>家用电器</small><small>手机数码</small><br>
+                                   <small>精选家居</small><small>服装鞋包</small><br>
+                                   <small>美妆个护</small><small>食品生鲜</small><br>
+                                   <small>礼品鲜花</small><small>汽车用品</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                   <small>趣购金融</small><small>优惠券</small><br>
+                                   <small>话费</small><small>加油卡</small><br>
+                                   <small>火车票</small><small>旅游出行</small><br>
+                                   <small>电影票</small><small>酒店住宿</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                   <small>合作招商</small><small>服装市场</small><br>
+                                   <small>企业采购</small><small>游戏社区</small><br>
+                                   <small>智能家居</small><small>知识产权</small><br>
+                                   <small>乡村招募</small><small>校园加盟</small><br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="">免费注册</a>
+                                </li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">企业采购</a></li>
+                                <li><a href="">客户服务</a></li>
+                                <li><a href="">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">购物车</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爱"尚"美<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">服装鞋靴</a>
+                                </li>
+                                <li>
+                                    <a href="">珠宝腕表</a>
+                                </li>
+                                <li>
+                                    <a href="">箱包配饰</a>
+                                </li>
+                                <li>
+                                    <a href="">运动户外</a>
+                                </li>
+                                <li>
+                                    <a href="">美妆个护</a>
+                                </li>
+                                <li>
+                                    <a href="">洗发护发</a>
+                                </li>
+                                <li>
+                                    <a href="">口腔护理</a>
+                                </li>
+                                <li>
+                                    <a href="">香水彩妆</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部菜单 end-->
+    <!-- 导航条 start-->
+    <div id="header">
+        <div id="h-top" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-lg-6 col-md-6 visible-lg visible-md text-center">
+                        <!-- 搜索框 start-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="华为">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                        <!-- 搜索框 end-->
+                        <!-- 热门词汇 start -->
+                        <div class="hotwords">
+                            <ul>
+                                <li><a href="">鞋包有礼</a></li>
+                                <li><a href="">毛呢大衣</a></li>
+                                <li><a href="">约会圣诞</a></li>
+                                <li><a href="">特卖街</a></li>
+                                <li><a href="">口腔护理</a></li>
+                                <li><a href="">进口面膜</a></li>
+                                <li class="hidden-md"><a href="">洗护大牌</a></li>
+                                <li class="hidden-md"><a href="">欧莱雅</a></li>
+                            </ul>
+                        </div>
+                        <!-- 热门词汇 end -->
+                    </div>
+                    <!-- 购物车 start -->
+                    <div class=" text-center visible-md visible-lg" id="cart">
+                        <a href="cart.html">
+                            <button class="btn btn-danger" type="button">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                                <span class="badge" style="position: static;">4</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- 购物车 end -->
+                </div>
+            </div>
+        </div>
+        <div id="h-bottom" class="visible-lg visible-md">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header col-md-2">
+                        <a class="navbar-brand" href="#">爱"尚"美</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse col-md-8">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">服装鞋靴<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">珠宝腕表</a></li>
+                            <li><a href="#">箱包配饰</a></li>
+                            <li><a href="#">运动户外</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-center">
+                            <li><a href="#">美妆个护</a></li>
+                            <li><a href="#">洗发护发</a></li>
+                            <li><a href="#">口腔护理</a></li>
+                            <li><a href="#">香水彩妆</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <!-- 导航条 end-->
+    <!-- 轮播图 start-->
+    <div id="slider">
+        <div class="container">
+            <div class="row">
+                <div id="slider_ad" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider_ad" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider_ad" data-slide-to="1"></li>
+                        <li data-target="#slider_ad" data-slide-to="2"></li>
+                        <li data-target="#slider_ad" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/cd-01.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/cd-02.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/cd-03.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/cd-04.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#slider_ad" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#slider_ad" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 end-->
+    <!-- 更多好物 start-->
+    <div id="moreProduct">
+        <h2 class="text-center">热门爆品</h2>
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#girl" aria-controls="girl" role="tab" data-toggle="tab">女装</a></li>
+                <li role="presentation"><a href="#boy" aria-controls="boy" role="tab" data-toggle="tab">男装</a></li>
+                <li role="presentation"><a href="#shoes" aria-controls="shoes" role="tab" data-toggle="tab">鞋包</a></li>
+                <li role="presentation"><a href="#decoration" aria-controls="decoration" role="tab" data-toggle="tab">配饰</a></li>
+                <li role="presentation"><a href="#perfume" aria-controls="perfume" role="tab" data-toggle="tab">香水彩妆</a></li>
+                <li role="presentation"><a href="#pretect" aria-controls="pretect" role="tab" data-toggle="tab">护肤套装</a></li>
+                <li role="presentation"><a href="#hair" aria-controls="hair" role="tab" data-toggle="tab">洗发护发</a></li>
+                <li role="presentation"><a href="#mouth" aria-controls="mouth" role="tab" data-toggle="tab">口腔护理</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="girl">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-01.jpg" class="img-circle">
+                                        <p><span>￥299.00</span> 山羊绒女纯色毛衣</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-02.jpg" class="img-circle">
+                                        <p><span>￥599.00</span> 秋冬女款纯色羊绒大衣</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-03.jpg" class="img-circle">
+                                        <p><span>￥729.00</span> 冬季新款面包羽绒服</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-04.jpg" class="img-circle">
+                                        <p><span>￥199.00</span> 格子无袖毛呢连衣裙</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="boy">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-05.jpg" class="img-circle">
+                                        <p><span>￥488.00</span> 2017冬季新款男士外套</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-06.jpg" class="img-circle">
+                                        <p><span>￥758.00</span> 长款男士羊毛大衣</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-07.jpg" class="img-circle">
+                                        <p><span>￥1460.00</span> 高端新款皮草外套</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-08.jpg" class="img-circle">
+                                        <p><span>￥399.00</span> 休闲风格圆领羊毛衫</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="shoes">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-09.jpg" class="img-circle">
+                                        <p><span>￥288.00</span> 冬季加绒长筒过膝靴</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-10.jpg" class="img-circle">
+                                        <p><span>￥238.00</span> 冬季新款流苏低跟女靴</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-11.jpg" class="img-circle">
+                                        <p><span>￥268.00</span> 牛皮百搭手提单肩包</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-12.jpg" class="img-circle">
+                                        <p><span>￥258.00</span> 2017新款手提小方包</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="decoration">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-13.jpg" class="img-circle">
+                                        <p><span>￥149.00</span> 情侣同款双面围巾</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-14.jpg" class="img-circle">
+                                        <p><span>￥469.00</span> 提花格纹羊绒围巾</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-15.jpg" class="img-circle">
+                                        <p><span>￥58.00</span> 韩版秋冬学生针织帽子</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-16.jpg" class="img-circle">
+                                        <p><span>￥69.00</span> 2017新款可爱贝雷帽子</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="perfume">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-17.jpg" class="img-circle">
+                                        <p><span>￥99.00</span> 女神的魔盒套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-18.jpg" class="img-circle">
+                                        <p><span>￥85.00</span> 持久蜜粉自然色</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-19.jpg" class="img-circle">
+                                        <p><span>￥505.00</span>  浮华传奇淡香水</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-20.jpg" class="img-circle">
+                                        <p><span>￥679.00</span> 心动女士香水</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="pretect">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-21.jpg" class="img-circle">
+                                        <p><span>￥230.00</span> 绿茶精粹护肤套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-22.jpg" class="img-circle">
+                                        <p><span>￥208.00</span> 动感亮肤美颜妆</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-23.jpg" class="img-circle">
+                                        <p><span>￥169.00</span> 水密码保湿套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-24.jpg" class="img-circle">
+                                        <p><span>￥459.00</span> 肌活新颜换肤套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="hair">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-25.jpg" class="img-circle">
+                                        <p><span>￥45.00</span> 无患子控油洗发水</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-26.jpg" class="img-circle">
+                                        <p><span>￥199.00</span> 沙宣修护水养套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-27.jpg" class="img-circle">
+                                        <p><span>￥199.00</span> 海飞丝恬雅清爽套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-28.jpg" class="img-circle">
+                                        <p><span>￥54.00</span> 精油润养润发乳</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="mouth">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-29.jpg" class="img-circle">
+                                        <p><span>￥55.00</span> 白牙素牙膏实惠套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-30.jpg" class="img-circle">
+                                        <p><span>￥45.00</span> 超白洁净药膏套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-31.jpg" class="img-circle">
+                                        <p><span>￥58.00</span> 儿童护齿牙膏牙刷套装</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 hidden-sm col-xs-12 text-center">
+                                <div class="tab_product">
+                                    <a href="" class="tab-item">
+                                        <img src="images/hot-32.jpg" class="img-circle">
+                                        <p><span>￥27.00</span> 酵素美白牙膏</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 更多好物 end-->
+    <!-- 服饰馆 start-->
+    <div id="clothes">
+        <h2 class="text-center">服饰馆</h2>
+        <div class="clothes-brand">
+            <div class="container">
+                <!-- 品牌上新 start-->
+                <h3 class="text-left">品牌上新</h3>
+                <section id="least">
+                    <!-- Least Gallery: Fullscreen Preview -->
+                    <div class="least-preview"></div>
+                    <!-- Least Gallery: Thumbnails -->
+                    <ul class="least-gallery">
+                        <!-- 1 || Element with data-caption ||-->
+                        <li>
+                            <a href="images/brand-01.jpg" title="betu" data-subtitle="百 图" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-01.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 2 || Element with data-caption as href-attribute ||-->-->
+                        <li>
+                            <a href="images/brand-02.jpg" title="3colour" data-subtitle="三 彩" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-02.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 3 -->
+                        <li>
+                            <a href="images/brand-03.jpg" title="rmk" data-subtitle="诺 曼 琦" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-03.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 4 -->
+                        <li class="hidden-md hidden-sm">
+                            <a href="images/brand-04.jpg" title="yaya" data-subtitle="鸭 鸭" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-04.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 5 -->
+                        <li>
+                            <a href="images/brand-05.jpg" title="Nautica" data-subtitle="Nautica" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-05.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 6 -->
+                        <li>
+                            <a href="images/brand-06.jpg" title="fairwhale" data-subtitle="马 克 华 菲" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-06.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 7 -->
+                        <li>
+                            <a href="images/brand-07.jpg" title="bossini" data-subtitle="堡 狮 龙" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-07.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 8 -->
+                        <li class="hidden-md hidden-sm">
+                            <a href="images/brand-08.jpg" title="brloote" data-subtitle="巴 鲁 特" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-08.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- 品牌上新 end-->
+                <!-- 更多上新 start-->
+                <h3 class="text-left">更多上新</h3>
+                <!-- 更多上新 end-->
+                <div class="new-product">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-01.jpg">
+                                        <p class="p-Name">
+                                           时尚拼色90鹅绒服喇叭袖西装领修身显瘦羽绒服 
+                                        </p>
+                                        <span>￥699.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-02.jpg">
+                                        <p class="p-Name">  
+                                           秋冬新品韩版复古休闲宽松外套冬季保暖翻领格子百搭简约呢大衣 秋冬款 
+                                        </p>
+                                        <span>￥459.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-03.jpg">
+                                        <p class="p-Name">
+                                           简约毛衫加厚保暖针织衫宽松韩风套头衫
+                                        </p>
+                                        <span>￥239.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-04.jpg">
+                                        <p class="p-Name">
+                                           人字呢修身连衣裙气质减龄百搭背带A字裙
+                                        </p>
+                                        <span>￥199.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-05.jpg">
+                                        <p class="p-Name">
+                                            长款羊毛呢大衣男士外套
+                                        </p>
+                                        <span>￥859.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-06.jpg">
+                                        <p class="p-Name">
+                                           冬装休闲棉男士夹克
+                                        </p>
+                                        <span>￥599.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-07.jpg">
+                                        <p class="p-Name">
+                                           美特斯邦威男时尚撞色冲锋衣（闪购款）
+                                        </p>
+                                        <span>￥119.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-08.jpg">
+                                        <p class="p-Name">
+                                           美特斯邦威男休闲印花连帽针织褛
+                                        </p>
+                                        <span>￥249.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-09.jpg">
+                                        <p class="p-Name">
+                                          Special 设计感爆棚 欧美胸针胸花别针花朵丝巾扣披肩扣 蔷薇之城X07
+                                        </p>
+                                        <span>￥66.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-10.jpg">
+                                        <p class="p-Name">
+                                           【送礼礼盒】DW 40mm玫瑰金手表手镯礼盒套装
+                                        </p>
+                                        <span>￥1769.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-11.jpg">
+                                        <p class="p-Name">
+                                           Viennois 绽放头花（可别在胸上和腰上）
+                                        </p>
+                                        <span>￥88.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/newProduct-12.jpg">
+                                        <p class="p-Name">
+                                           紫气东来 天然酒红石榴石三圈手链
+                                        </p>
+                                        <span>￥100.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 服饰馆 end-->
+    <!-- 美妆馆 start-->
+    <div id="beauty">
+        <h2 class="text-center">美妆馆</h2>
+        <div class="beauty-brand">
+            <div class="container">
+                <!-- 品牌上新 start-->
+                <h3 class="text-left">品牌上新</h3>
+                <section id="least">
+                    <!-- Least Gallery: Fullscreen Preview -->
+                    <div class="least-preview"></div>
+                    <!-- Least Gallery: Thumbnails -->
+                    <ul class="least-gallery">
+                        <!-- 1 || Element with data-caption ||-->
+                        <li>
+                            <a href="images/brand-09.jpg" title="hanhoo" data-subtitle="韩 后" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-09.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 2 || Element with data-caption as href-attribute ||-->-->
+                        <li>
+                            <a href="images/brand-10.jpg" title="lanbore" data-subtitle="兰 博 尔" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-10.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 3 -->
+                        <li>
+                            <a href="images/brand-11.jpg" title="mybeautydariy" data-subtitle="我 的 美 丽 日 志" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-11.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 4 -->
+                        <li class="hidden-md hidden-sm">
+                            <a href="images/brand-12.jpg" title="baimiss" data-subtitle="佰 魅 伊 人" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-12.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 5 -->
+                        <li>
+                            <a href="images/brand-13.jpg" title="hedcze" data-subtitle="韩 熙 贞" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-13.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 6 -->
+                        <li>
+                            <a href="images/brand-14.jpg" title="deaiou" data-subtitle="笛 爱 儿" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-14.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 7 -->
+                        <li>
+                            <a href="images/brand-15.jpg" title="drscholl" data-subtitle="爽 健" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-15.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                        <!-- 8 -->
+                        <li class="hidden-md hidden-sm">
+                            <a href="images/brand-16.jpg" title="median" data-subtitle="爱 茉 莉" data-caption="<strong>Bold text</strong> normal caption text">
+                                <img src="images/brand-16.jpg" alt="Alt Image Text" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- 品牌上新 end-->
+                <!-- 更多上新 start-->
+                <h3 class="text-left">更多上新</h3>
+                <!-- 更多上新 end-->
+                <div class="beauty-product">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-01.jpg">
+                                        <p class="p-Name">
+                                            轻甜水嫩鲜气垫调控霜02 
+                                        </p>
+                                        <span>￥99.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-02.jpg">
+                                        <p class="p-Name">
+                                            大眼睛俏眉精致眉笔 0.25g*2（含替换装） 01#浅棕色 
+                                        </p>
+                                        <span>￥59.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-03.jpg">
+                                        <p class="p-Name">
+                                            Larastyle雾面水感唇釉套装（9支） 
+                                        </p>
+                                        <span>￥76.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-04.jpg">
+                                        <p class="p-Name">
+                                            Larastyle浓情巧克力眼影
+                                        </p>
+                                        <span>￥99.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-05.jpg">
+                                        <p class="p-Name">
+                                            邂逅海洋保湿套装 补水保湿BB套装 补水 保湿  滋润 保湿爽肤水 化妆水 保湿乳液 BB霜 隔离霜 卸妆水 
+                                        </p>
+                                        <span>￥199.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-06.jpg">
+                                        <p class="p-Name">
+                                            济州岛火山岩泥毛孔清洁紧实面膜100ml 
+                                        </p>
+                                        <span>￥99.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-07.jpg">
+                                        <p class="p-Name">
+                                            真萃鲜润面膜 6片 
+                                        </p>
+                                        <span>￥40.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-08.jpg">
+                                        <p class="p-Name">
+                                            乐活自然美妆工具印章式遮盖粉扑 
+                                        </p>
+                                        <span>￥40.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-09.jpg">
+                                        <p class="p-Name">
+                                            905海飞丝致美限量款定制套装 
+                                        </p>
+                                        <span>￥199.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-10.jpg">
+                                        <p class="p-Name">
+                                            飘柔净油顺爽530SH+530CN专供装 
+                                        </p>
+                                        <span>￥119.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-11.jpg">
+                                        <p class="p-Name">
+                                            无患子保湿滋养洗头水中干性265ml 
+                                        </p>
+                                        <span>￥45.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-center">
+                                <div class="product">
+                                    <a href="" class="p-Item">
+                                        <img src="images/beautyProduct-12.jpg">
+                                        <p class="p-Name">
+                                            清扬CLEAR  植觉净透去屑洗护套装（380ml+375ml) 
+                                        </p>
+                                        <span>￥120.00</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 美妆馆 end-->
+    <!-- 合作伙伴 start-->
+    <div id="footer">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="footer-title text-center">
+                    <a href="">关于我们 |</a>
+                    <a href="">&nbsp;联系我们 |</a>
+                    <a href="">&nbsp;合作伙伴</a>
+                </div>
+                <div class="footer-content text-center">
+                    <span>计算机与信息工程学院</span>
+                    <span>计算机科学与技术2班</span>
+                    <span>马璐璐</span>
+                </div>
+           </div>
+       </div> 
+    </div>
+    <!-- 合作伙伴 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript" src="js/main.js"></script>

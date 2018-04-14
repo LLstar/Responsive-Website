@@ -1,0 +1,536 @@
+//左侧导航
+#silder {}
+
+#silder .container {
+	margin-top: 20px;
+}
+
+#silder #silder-lf {
+	padding: 0;
+}
+
+#silder #silder-lf .silder_list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#silder #silder-lf .silder_list li {
+	background-color: rgb(34, 134, 56);
+	list-style: none;
+	padding: 6px;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li:hover {
+	background-color: rgba(34, 134, 56, .7);
+}
+
+#silder #silder-lf .silder_list li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#silder #silder-lf .silder_list li a:hover {
+	color: #f10215;
+}
+
+#silder #silder-lf .silder_list li:nth-child(8) {
+	padding-bottom: 0;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+	#silder #silder-lf .silder_list li:nth-child(7) {
+       padding-bottom: 0;  
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+	#silder #silder-lf .silder_list li:nth-child(5) {
+       padding-top: 0;
+       padding-bottom: 0;  
+    }
+}
+
+//家装馆
+#home {}
+
+#home .container h2 {
+	font-weight: 700;
+}
+
+#home .container .row .thumbnail {
+	color: #666;
+	text-decoration: none;
+}
+
+#home .container .row .thumbnail:hover {
+	text-decoration: none;
+	overflow: hidden;
+}
+
+#home .container .row .thumbnail:hover .h-name {
+	color: #f10215;
+}
+
+#home .container .row .thumbnail .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#home .container .row .thumbnail .h-price {
+	font-size: 20px;
+	color: #f10215;
+	font-weight: 600;
+}
+
+#home .container .row .h-brand:hover img {
+	opacity: 1;
+    transform: scale(1.1, 1.1);
+    transition: all 1.2s ease 0s;
+}
+
+#home .container #home1 div {
+	background-color: #fff;
+}
+
+#home .container #home1 div img {
+	width: 100%;
+}
+
+#home .container #home1 div a {
+	color: #666;
+}
+
+#home .container #home1 div a:hover {
+	text-decoration: none;
+}
+
+#home .container #home1 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#home .container #home1 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#home .container #home1 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#home .container #home2 div {
+	background-color: #fff;
+}
+
+#home .container #home2 div img {
+	width: 100%;
+}
+
+#home .container #home2 div a {
+	color: #666;
+}
+
+#home .container #home2 div a:hover {
+	text-decoration: none;
+}
+
+#home .container #home2 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#home .container #home2 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#home .container #home2 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#home .container #home3 div {
+	background-color: #fff;
+}
+
+#home .container #home3 div img {
+	width: 100%;
+}
+
+#home .container #home3 div a {
+	color: #666;
+}
+
+#home .container #home3 div a:hover {
+	text-decoration: none;
+}
+
+#home .container #home3 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#home .container #home3 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#home .container #home3 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#home .container #home4 div {
+	background-color: #fff;
+}
+
+#home .container #home4 div img {
+	width: 100%;
+}
+
+#home .container #home4 div a {
+	color: #666;
+}
+
+#home .container #home4 div a:hover {
+	text-decoration: none;
+}
+
+#home .container #home4 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#home .container #home4 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#home .container #home4 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+//母婴专区
+#baby{}
+
+#baby .container {
+	margin-top: 30px;
+}
+
+#baby .container h2 {
+	font-weight: 700;
+}
+
+#baby .container .row .thumbnail:hover {
+	-webkit-transform: translate3d(0,-5px,0);
+	transform: translate3d(0,-5px,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #mother1 div {
+	background-color: #fff;
+}
+
+#baby .container #mother1 div img {
+	width: 100%;
+}
+
+#baby .container #mother1 div a {
+	color: #666;
+}
+
+#baby .container #mother1 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #mother1 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #mother1 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #mother1 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #mother2 div {
+	background-color: #fff;
+}
+
+#baby .container #mother2 div img {
+	width: 100%;
+}
+
+#baby .container #mother2 div a {
+	color: #666;
+}
+
+#baby .container #mother2 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #mother2 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #mother2 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #mother2 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #mother3 div {
+	background-color: #fff;
+}
+
+#baby .container #mother3 div img {
+	width: 100%;
+}
+
+#baby .container #mother3 div a {
+	color: #666;
+}
+
+#baby .container #mother3 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #mother3 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #mother3 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #mother3 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #baby1 div {
+	background-color: #fff;
+}
+
+#baby .container #baby1 div img {
+	width: 100%;
+}
+
+#baby .container #baby1 div a {
+	color: #666;
+}
+
+#baby .container #baby1 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #baby1 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #baby1 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #baby1 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #baby2 div {
+	background-color: #fff;
+}
+
+#baby .container #baby2 div img {
+	width: 100%;
+}
+
+#baby .container #baby2 div a {
+	color: #666;
+}
+
+#baby .container #baby2 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #baby2 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #baby2 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #baby2 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #baby3 div {
+	background-color: #fff;
+}
+
+#baby .container #baby3 div img {
+	width: 100%;
+}
+
+#baby .container #baby3 div a {
+	color: #666;
+}
+
+#baby .container #baby3 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #baby3 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #baby3 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #baby3 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #babyCar1 div {
+	background-color: #fff;
+}
+
+#baby .container #babyCar1 div img {
+	width: 100%;
+}
+
+#baby .container #babyCar1 div a {
+	color: #666;
+}
+
+#baby .container #babyCar1 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #babyCar1 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #babyCar1 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #babyCar1 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #babyCar2 div {
+	background-color: #fff;
+}
+
+#baby .container #babyCar2 div img {
+	width: 100%;
+}
+
+#baby .container #babyCar2 div a {
+	color: #666;
+}
+
+#baby .container #babyCar2 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #babyCar2 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #babyCar2 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #babyCar2 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}
+
+#baby .container #babyCar3 div {
+	background-color: #fff;
+}
+
+#baby .container #babyCar3 div img {
+	width: 100%;
+}
+
+#baby .container #babyCar3 div a {
+	color: #666;
+}
+
+#baby .container #babyCar3 div a:hover {
+	text-decoration: none;
+}
+
+#baby .container #babyCar3 div a:hover img {
+	-webkit-transform: translate3d(5px,0,0);
+	transform: translate3d(5px,0,0);
+	transition: transform 0.35s;
+}
+
+#baby .container #babyCar3 div a .h-name {
+	height: 40px;
+	overflow: hidden;
+}
+
+#baby .container #babyCar3 div a .h-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #f10215;
+}

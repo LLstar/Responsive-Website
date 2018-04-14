@@ -1,0 +1,29 @@
+.waterfall_ul {
+/*	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;*/
+	/*justify-content: space-between;*/
+	/*flex-wrap: wrap;*/
+	padding-left: 20px;
+
+}
+.waterfall_ul .li_w {
+
+	margin-top: 40px;
+}
+.waterfall_ul .li_w .img-w img {
+	width: 100%;
+}
+
+.waterfall_ul .li_w .intro-w .content {
+	height: 40px;
+	overflow: hidden;
+}
+
+.waterfall_ul .li_w .intro-w .price {
+	font-size: 20px;
+	color: #f10215;
+	font-weight: 700;
+}

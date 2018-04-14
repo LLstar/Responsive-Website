@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>趣购首页</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 顶部导航 start -->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="javascript:;" id="positionText">北京</a>
+                        <ul id="position">
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="javascript:;">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar">
+                            <li class="nav-item">特色主题
+                                <div>
+                                    <small>趣购金融</small><small>趣购会员</small>
+                                    <br>
+                                    <small>优惠券</small><small>陪伴计划</small>
+                                    <br>
+                                    <small>买什么</small><small>趣购秒杀</small>
+                                    <br>
+                                    <small>全球购</small><small>0元测评</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                    <small>家用电器</small><small>手机数码</small>
+                                    <br>
+                                    <small>精选家居</small><small>服装鞋包</small>
+                                    <br>
+                                    <small>美妆个护</small><small>食品生鲜</small>
+                                    <br>
+                                    <small>礼品鲜花</small><small>汽车用品</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                    <small>趣购金融</small><small>优惠券</small>
+                                    <br>
+                                    <small>话费</small><small>加油卡</small>
+                                    <br>
+                                    <small>火车票</small><small>旅游出行</small>
+                                    <br>
+                                    <small>电影票</small><small>酒店住宿</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                    <small>合作招商</small><small>服装市场</small>
+                                    <br>
+                                    <small>企业采购</small><small>游戏社区</small>
+                                    <br>
+                                    <small>智能家居</small><small>知识产权</small>
+                                    <br>
+                                    <small>乡村招募</small><small>校园加盟</small>
+                                    <br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="javascript:;"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:;">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="register.html">免费注册</a>
+                                </li>
+                                <li><a href="javascript:;">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="javascript:;">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="javascript:;">企业采购</a></li>
+                                <li><a href="javascript:;">客户服务</a></li>
+                                <li><a href="javascript:;">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html">购物车</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">随便逛逛<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="javascript:;">家用电器</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">数码手机</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">电脑办公</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">家居厨具</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">服装鞋靴</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">美妆个护</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">钟表珠宝</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">运动户外</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">汽车用品</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">母婴玩具</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">食品生鲜</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">鲜花绿植</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">医药保健</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">图书音像</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">住宿旅游</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">理财保险</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部导航 end -->
+    <!-- 头部通栏 start-->
+    <header id="header">
+        <div id="h-top" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-lg-6 col-md-6 visible-lg visible-md text-center">
+                        <!-- 搜索框 start-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="华为">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                        <!-- 搜索框 end-->
+                        <!-- 热门词汇 start -->
+                        <div class="hotwords">
+                            <ul>
+                                <li><a href="javascript:;">联想电脑</a></li>
+                                <li><a href="javascript:;">温暖女神</a></li>
+                                <li><a href="javascript:;">99元4件</a></li>
+                                <li><a href="javascript:;">美妆节</a></li>
+                                <li><a href="javascript:;">"火力全开"</a></li>
+                                <li><a href="javascript:;">涮锅搭档</a></li>
+                                <li class="hidden-md"><a href="javascript:;">科技护肤</a></li>
+                                <li class="hidden-md"><a href="javascript:;">"橙"熟了</a></li>
+                            </ul>
+                        </div>
+                        <!-- 热门词汇 end -->
+                    </div>
+                    <!-- 购物车 start -->
+                    <div class=" text-center visible-md visible-lg" id="cart">
+                        <a href="cart.html">
+                            <button class="btn btn-danger" type="button">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                                <span class="badge" style="position: static;">4</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- 购物车 end -->
+                </div>
+            </div>
+        </div>
+        <div id="h-bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- 导航菜单 start-->
+                    <div class="col-md-offset-2 col-lg-7 col-md-8 hidden-xs hidden-sm col-lg-offset-3">
+                        <ul class="nav navbar-nav">
+                            <li><a href="javascript:;">秒杀</a></li>
+                            <li><a href="javascript:;">优惠券</a></li>
+                            <li><a href="javascript:;">闪购</a></li>
+                            <li><a href="javascript:;">拍卖</a></li>
+                            <li><a href="javascript:;">京东服饰</a></li>
+                            <li><a href="javascript:;">京东超市</a></li>
+                            <li><a href="javascript:;">生鲜</a></li>
+                            <li><a href="javascript:;">全球购</a></li>
+                            <li><a href="javascript:;">京东金融</a></li>
+                        </ul>
+                    </div>
+                    <!-- 导航菜单 end-->
+                    <!-- 热门图片 start-->
+                    <div class="col-lg-2 col-md-2 visible-lg visible-md text-center">
+                        <img src="images/03.gif" id="t_back">
+                    </div>
+                    <!-- 热门图片 end-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部通栏 end-->
+    <!-- 轮播图 start-->
+    <div id="silder">
+        <div class="container">
+            <div class="row">
+                <!-- 左侧导航 start-->
+                <div class="col-md-2 col-lg-2 visible-md visible-lg text-left" id="silder-lf" style="padding-left: 0;">
+                    <ul class="silder_list" style="padding-left: 0;">
+                        <li>
+                            <span class="glyphicon glyphicon-lamp"></span>
+                            <a href="javascript:;">家用电器</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-phone"></span>
+                            <a href="javascript:;">手机</a>
+                            <span>/</span>
+                            <a href="javascript:;">数码</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-modal-window"></span>
+                            <a href="javascript:;">电脑</a>
+                            <span>/</span>
+                            <a href="javascript:;">办公</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-bed"></span>
+                            <a href="javascript:;">家居</a>
+                            <span>/</span>
+                            <a href="javascript:;">家具</a>
+                            <span>/</span>
+                            <a href="javascript:;">厨具</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-user
+                            "></span>
+                            <a href="javascript:;">男装</a>
+                            <span>/</span>
+                            <a href="javascript:;">女装</a>
+                            <span>/</span>
+                            <a href="javascript:;">童装</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-sunglasses"></span>
+                            <a href="javascript:;">美妆个护</a>
+                            <span>/</span>
+                            <a href="javascript:;">宠物</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-time"></span>
+                            <a href="javascript:;">女鞋</a>
+                            <span>/</span>
+                            <a href="javascript:;">钟表</a>
+                            <span>/</span>
+                            <a href="javascript:;">珠宝</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-tent"></span>
+                            <a href="javascript:;">男鞋</a>
+                            <span>/</span>
+                            <a href="javascript:;">运动</a>
+                            <span>/</span>
+                            <a href="javascript:;">户外</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-globe"></span>
+                            <a href="javascript:;">汽车</a>
+                            <span>/</span>
+                            <a href="javascript:;">汽车用品</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-baby-formula"></span>
+                            <a href="javascript:;">母婴</a>
+                            <span>/</span>
+                            <a href="javascript:;">玩具乐器</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-grain"></span>
+                            <a href="javascript:;">食品</a>
+                            <span>/</span>
+                            <a href="javascript:;">酒类</a>
+                            <span>/</span>
+                            <a href="javascript:;">生鲜</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <span class="glyphicon glyphicon-leaf"></span>
+                            <a href="javascript:;">礼品鲜花</a>
+                            <span>/</span>
+                            <a href="javascript:;">农资绿植</a>
+                        </li>
+                        <li class="hidden-md">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <a href="javascript:;">图书</a>
+                            <span>/</span>
+                            <a href="javascript:;">音像</a>
+                            <span>/</span>
+                            <a href="javascript:;">电子书</a>
+                        </li>
+                        <li class="hidden-md">
+                            <span class="glyphicon glyphicon-plane"></span>
+                            <a href="javascript:;">机票</a>
+                            <span>/</span>
+                            <a href="javascript:;">酒店</a>
+                            <span>/</span>
+                            <a href="javascript:;">旅游</a>
+                        </li>
+                        <li class="hidden-md">
+                            <span class="glyphicon glyphicon-piggy-bank"></span>
+                            <a href="javascript:;">理财</a>
+                            <span>/</span>
+                            <a href="javascript:;">白条</a>
+                            <span>/</span>
+                            <a href="javascript:;">保险</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 左侧导航 end-->
+                <!-- 广告轮播 start-->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center" id="silder_ad">
+                    <div id="main_ad" class="carousel slide" data-ride="carousel">
+                        <!-- 小圆点 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+                            <li data-target="#main_ad" data-slide-to="1"></li>
+                            <li data-target="#main_ad" data-slide-to="2"></li>
+                            <li data-target="#main_ad" data-slide-to="3"></li>
+                            <li data-target="#main_ad" data-slide-to="4"></li>
+                            <li data-target="#main_ad" data-slide-to="5"></li>
+                        </ol>
+                        <!-- 轮播图 -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/04.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/05.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/06.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/07.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/08.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/09.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 控制项 -->
+                        <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+                    <!-- 广告图片 start-->
+                    <div class="ad_picture">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="javascript:;"><img src="images/10.png" alt="" class="img-rounded img-responsive center-block"></a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <a href="javascript:;"><img src="images/11.png" alt="" class="img-rounded img-responsive center-block"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 广告图片 end-->
+                </div>
+                <!-- 广告轮播 end-->
+                <!-- 用户信息 start -->
+                <div class="col-md-2 col-lg-2 text-center visible-lg visible-md" id="silder-rh">
+                    <div class="silder_user clearfix">
+                        <div class="user_info col-md-4">
+                            <a href="javascript:;"><img src="images/12.jpg" class="img-circle img-responsive"></a>
+                        </div>
+                        <div class="user_info_show col-md-8">
+                            <p>欢迎来到趣购</p>
+                            <p>
+                                <a href="login.html">登录</a>
+                                <a href="register.html">注册</a>
+                            </p>
+                        </div>
+                        <div class="user_profit">
+                            <a class="btn btn-danger col-md-6 btn-sm" href="javascript:;" role="button">新人福利</a>
+                            <a class="btn btn-danger col-md-6 btn-sm" href="javascript:;" role="button">趣购会员</a>
+                        </div>
+                    </div>
+                    <!-- 新闻列表 start-->
+                    <div class="silder_news">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">促销</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">公告</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content text-left">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <a href="javascript:;">玩具满199元送圣诞树</a>
+                                <br>
+                                <a href="javascript:;">智利车厘子甜蜜尝鲜</a>
+                                <br>
+                                <a href="javascript:;">每日享折扣 京东品质游</a>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <a href="javascript:;">大衣+球鞋温暖时髦</a>
+                                <br>
+                                <a href="javascript:;">手把手带你Get显瘦新穿法</a>
+                                <br>
+                                <a href="javascript:;">穿大衣该怎么裹围巾？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 新闻列表 end-->
+                    <!-- 选择项 start-->
+                    <div class="silder_chioce">
+                        <ul class="list-group">
+                            <li class="list-group-item col-md-4 text-left">
+                                <i class="glyphicon glyphicon-usd"></i>
+                                <span>话费</span>
+                            </li>
+                            <li class="list-group-item col-md-4">
+                                <i class="glyphicon glyphicon-plane"></i>
+                                <span>机票</span>
+                            </li>
+                            <li class="list-group-item col-md-4">
+                                <i class="glyphicon glyphicon-home"></i>
+                                <span>酒店</span>
+                            </li>
+                        </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-road"></i>
+                                <span style="margin-left: -8px;">火车票</span>
+                            </li>
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-film"></i>
+                                <span style="margin-left: -8px;">电影票</span>
+                            </li>
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-oil"></i>
+                                <span style="margin-left: -8px;">加油卡</span>
+                            </li>
+                        </ul>
+                        <ul class="list-group hidden-md">
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-piggy-bank"></i>
+                                <span>理财</span>
+                            </li>
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>众筹</span>
+                            </li>
+                            <li class="list-group-item col-md-4 text-center">
+                                <i class="glyphicon glyphicon-list-alt"></i>
+                                <span>白条</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 选择项 end-->
+                </div>
+                <!-- 用户信息 end -->
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 end-->
+    <!-- 秒杀专区 start-->
+    <div id="kill_box">
+        <div class="kill-ad container">
+            <div class="row">
+                <div class="killBox-lf col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left">
+                    <i class="glyphicon glyphicon-time kb-coll1 col-sm-1"></i>
+                    <h3 class="kb-coll2 col-sm-5 hidden-xs">趣购秒杀 
+                    </h3>
+                    <div class="sk_time col-md-6 text-left">
+                        <span class="num">00</span>
+                        <span class="str">:</span>
+                        <span class="num">00</span>
+                        <span class="str">:</span>
+                        <span class="num">00</span>
+                    </div>
+                </div>
+                <div class="killBox-rh col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
+                    <a class="kb-coll3" href="javascript:;">总有你想不到的低价<i class="glyphicon glyphicon-menu-right kb-coll4"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="kill-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6 text-center">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-01.jpg">
+                            <p class="sk_name">松下（Panasonic）TH-55DX500C 55英寸4K超高清HDR智能网络液晶平板电视 IPS硬屏全金属窄边框前置下悬式音箱（黑色）</p>
+                            <span>&yen;3999</span>
+                            <del>&yen;5999</del>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6 text-center">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-02.jpg">
+                            <p class="sk_name">【视频看货】benken正品超薄手表男士女士皮带时尚男表女表学生钢带防水石英表情侣表一对 7007黑盘钢带-男表</p>
+                            <span>&yen;398</span>
+                            <del>&yen;580</del>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-sm-4 text-center visible-lg visible-md visible-sm">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-03.jpg">
+                            <p class="sk_name">戴尔(DELL)成就3667-R1308商用台式电脑整机(i3-6100 4G 1T WIFI 蓝牙 三年上门 硬盘保留 Win10)19.5英寸</p>
+                            <span>&yen;3899</span>
+                            <del>&yen;4999</del>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2 text-center visible-lg visible-md">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-04.jpg">
+                            <p class="sk_name">滋源生姜强根健发尊享装（无硅油 洗头水套装 洗发水265ml+护发素265ml+洗护60ml）</p>
+                            <span>&yen;98</span>
+                            <del>&yen;158</del>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center visible-lg">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-05.jpg">
+                            <p class="sk_name">九阳（Joyoung）电饭煲4L电饭锅铜匠厚釜天幕触控F-40FY806</p>
+                            <span>&yen;580</span>
+                            <del>&yen;798</del>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center visible-lg">
+                        <div class="sk_product">
+                            <a href="javascript:;" class="sk-item">
+                            <img src="images/kill-06.jpg">
+                            <p class="sk_name">毕亚兹(BIAZE) 蓝牙耳机 入耳式 迷你商务智能蓝牙4.1立体声音乐耳机华为/oppo/小米/苹果手机通用 D15黑色</p>
+                            <span>&yen;129</span>
+                            <del>&yen;198</del>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 秒杀专区 end-->
+    <!-- 产品展示 start-->
+    <div id="product">
+        <main class="cd-main-content">
+            <div class="cd-fixed-bg cd-bg-1">
+                <h2 class="text-center">爱"尚"美</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-clothes" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="beauty.html">爱逛</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-clothes">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="beauty.html">潮男</a></li>
+                                            <li class="active"><a href="beauty.html">女装盛宴<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="beauty.html">童装童鞋</a></li>
+                                            <li><a href="beauty.html">美饰</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="beauty.html">
+                                        <img src="images/beauty/clothes-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>潮男养成记</p>
+                                        <img src="images/beauty/clothes-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>女装盛宴</p>
+                                        <img src="images/beauty/clothes-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>内衣保暖季</p>
+                                        <img src="images/beauty/clothes-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>I尚设计</p>
+                                        <img src="images/beauty/clothes-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="beauty.html"><img src="images/beauty/clothes-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="beauty.html"><img src="images/beauty/clothes-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="beauty.html"><img src="images/beauty/clothes-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/cloIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/cloIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/cloIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/cloIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/cloIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/cloIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-beautiful" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="beauty.html">爱美丽</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-beautiful">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="beauty.html">面膜</a></li>
+                                            <li class="active"><a href="beauty.html">套装<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="beauty.html">洗发护发</a></li>
+                                            <li><a href="beauty.html">眼霜</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="beauty.html">
+                                        <img src="images/beauty/beautiful-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>美妆馆</p>
+                                        <img src="images/beauty/beautiful-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>面部护肤</p>
+                                        <img src="images/beauty/beautiful-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>香水彩妆</p>
+                                        <img src="images/beauty/beautiful-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="beauty.html">
+                                        <p>个护馆</p>
+                                        <img src="images/beauty/beautiful-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="beauty.html"><img src="images/beauty/beautiful-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="beauty.html"><img src="images/beauty/beautiful-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="beauty.html"><img src="images/beauty/beautiful-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/beaIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/beaIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/beaIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/beaIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/beaIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/beaIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-fixed-bg cd-bg-2">
+                <h2 class="text-center">爱科技</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-inverse product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-science" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="science.html">家电馆</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-science">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="science.html">电视家影</a></li>
+                                            <li class="active"><a href="science.html">空调盛宴<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="science.html">巅峰盛典</a></li>
+                                            <li><a href="science.html">冬日必备</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="science.html">
+                                        <img src="images/science/science-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>电视影音</p>
+                                        <img src="images/science/science-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>电视影音</p>
+                                        <img src="images/science/science-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>冰箱洗衣机</p>
+                                        <img src="images/science/science-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>买一赠一</p>
+                                        <img src="images/science/science-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="science.html"><img src="images/science/science-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="science.html"><img src="images/science/science-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="science.html"><img src="images/science/science-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/sceIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/sceIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/sceIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/sceIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/sceIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/sceIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-inverse product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-phone" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="science.html">搞机派</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-phone">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="science.html">金属机身</a></li>
+                                            <li class="active"><a href="science.html">快速充电<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="science.html">拍照神器</a></li>
+                                            <li><a href="science.html">双摄像</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="science.html">
+                                        <img src="images/science/phone-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>新Phone尚</p>
+                                        <img src="images/science/phone-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>关爱老人</p>
+                                        <img src="images/science/phone-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>京东网厅</p>
+                                        <img src="images/science/phone-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="science.html">
+                                        <p>正品好店</p>
+                                        <img src="images/science/phone-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="science.html"><img src="images/science/phone-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="science.html"><img src="images/science/phone-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="science.html"><img src="images/science/phone-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/pheIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/pheIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/pheIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-fixed-bg cd-bg-3">
+                <h2 class="text-center">爱生活</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-eat" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="life.html">爱吃</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-eat">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="life.html">休闲零食</a></li>
+                                            <li class="active"><a href="life.html">坚果牛奶<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="life.html">火锅涮肉</a></li>
+                                            <li><a href="life.html">海鲜礼盒</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="life.html">
+                                        <img src="images/life/eat-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>休闲零食</p>
+                                        <img src="images/life/eat-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>中外名酒</p>
+                                        <img src="images/life/eat-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>"0"元试吃</p>
+                                        <img src="images/life/eat-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>饮料冲调</p>
+                                        <img src="images/life/eat-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="life.html"><img src="images/life/eat-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="life.html"><img src="images/life/eat-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="life.html"><img src="images/life/eat-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/eatIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/eatIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/eatIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/eatIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/eatIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/eatIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-life" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="life.html">爱阅读</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-life">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="life.html">特色书店</a></li>
+                                            <li class="active"><a href="life.html">育儿家教<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="life.html">中外文学</a></li>
+                                            <li><a href="life.html">政治军事</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="life.html">
+                                        <img src="images/life/life-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>畅销好书</p>
+                                        <img src="images/life/life-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>特色书店</p>
+                                        <img src="images/life/life-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>文学馆</p>
+                                        <img src="images/life/life-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="life.html">
+                                        <p>童书馆</p>
+                                        <img src="images/life/life-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="life.html"><img src="images/science/phone-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="life.html"><img src="images/science/phone-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="life.html"><img src="images/science/phone-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/pheIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/pheIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/pheIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/pheIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-fixed-bg cd-bg-4">
+                <h2 class="text-center">爱健康</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-inverse product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-run" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="health.html">爱运动</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-run">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="health.html">跑步鞋</a></li>
+                                            <li class="active"><a href="health.html">冲锋衣<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="health.html">动感单车</a></li>
+                                            <li><a href="health.html">户外风衣</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="health.html">
+                                        <img src="images/health/run-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>运动</p>
+                                        <img src="images/health/run-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>户外</p>
+                                        <img src="images/health/run-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>健身</p>
+                                        <img src="images/health/run-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>骑行</p>
+                                        <img src="images/health/run-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="health.html"><img src="images/health/run-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="health.html"><img src="images/health/run-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="health.html"><img src="images/health/run-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/runIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/runIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/runIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/runIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/runIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/runIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-inverse product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-health" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="health.html">爱健康</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-health">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="health.html">隐形眼镜</a></li>
+                                            <li class="active"><a href="health.html">健康服务<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="health.html">慢病管理</a></li>
+                                            <li><a href="health.html">医疗用品</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="health.html">
+                                        <img src="images/health/health-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>新Phone尚</p>
+                                        <img src="images/health/health-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>关爱老人</p>
+                                        <img src="images/health/health-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>京东网厅</p>
+                                        <img src="images/health/health-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="health.html">
+                                        <p>正品好店</p>
+                                        <img src="images/health/health-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="health.html"><img src="images/health/health-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="health.html"><img src="images/health/health-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="health.html"><img src="images/health/health-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/heaIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/heaIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/heaIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/heaIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/heaIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/heaIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-fixed-bg cd-bg-5">
+                <h2 class="text-center">爱家</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-baby" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="family.html">爱宝宝</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-baby">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="family.html">洗护喂养</a></li>
+                                            <li class="active"><a href="family.html">妈妈专区<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="family.html">寝居服饰</a></li>
+                                            <li><a href="family.html">婴儿推车</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="family.html">
+                                        <img src="images/family/baby-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>尿裤辅食</p>
+                                        <img src="images/family/baby-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>尿裤湿巾</p>
+                                        <img src="images/family/baby-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>玩具乐器</p>
+                                        <img src="images/family/baby-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>陪伴宝宝</p>
+                                        <img src="images/family/baby-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="family.html"><img src="images/family/baby-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="family.html"><img src="images/family/baby-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="family.html"><img src="images/family/baby-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/babyIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/babyIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/babyIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/babyIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/babyIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/babyIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center product-list">
+                            <nav class="navbar navbar-default product-nav">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#product-family" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="family.html">爱家</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="product-family">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="family.html">家电装修</a></li>
+                                            <li class="active"><a href="family.html">书房办公<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="family.html">设计帮</a></li>
+                                            <li><a href="family.html">风格馆</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                            <div class="product-top">
+                                <div style="padding-left: 0;" class="col-md-4 hidden-sm hidden-xs">
+                                    <a href="family.html">
+                                        <img src="images/family/family-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 text-center product-detail">
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>家装建材</p>
+                                        <img src="images/family/family-02.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>品质厨具</p>
+                                        <img src="images/family/family-03.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>精品家居</p>
+                                        <img src="images/family/family-04.jpg">
+                                    </a>
+                                    <a class="col-md-6 col-sm-6 col-xs-12" href="family.html">
+                                        <p>居家日用</p>
+                                        <img src="images/family/family-05.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center" style="padding-left: 0;">
+                                    <a href="family.html"><img src="images/family/family-06.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="family.html"><img src="images/family/family-07.jpg"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                                    <a href="family.html"><img src="images/family/family-08.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="product-footer text-center">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/famIcon-01.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/famIcon-02.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <img src="images/icon/famIcon-03.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-3 hidden-xs">
+                                    <img src="images/icon/famIcon-04.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/famIcon-05.jpg">
+                                </div>
+                                <div class="col-md-2 hidden-sm hidden-xs">
+                                    <img src="images/icon/famIcon-06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- 产品展示 end-->
+    <!-- 更多产品 start-->
+    <div id="more">
+        <h2 class="text-center more-title">还没逛够</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-01.jpg">
+                        <p>悦恋家纺多功能靠垫抱枕被两用抱枕被汽车午休被空调盖被 裸婚时代 40cm*40cm</p>
+                        <span>&yen;28.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-02.jpg">
+                        <p>上海绿源(SHLY) 节能灯 E27 灯泡 白炽灯色  螺旋形 螺旋形14W 色温6500K 白光</p>
+                        <span>&yen;48.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-03.jpg">
+                        <p>曼秀雷敦（Mentholatum）薄荷润唇膏3.5g（修护疼痛 润唇膏女 滋润保湿）</p>
+                        <span>&yen;25.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-04.jpg">
+                        <p>贵族经典复古花朵配饰丝巾扣 别针时尚饰品X1707 X1707-刘涛同款树叶环胸针</p>
+                        <span>&yen;399.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-05.jpg">
+                        <p>出家【首届京东文学奖-年度新锐获奖作品】</p>
+                        <span>&yen;32.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-06.jpg">
+                        <p>联想(Lenovo)拯救者 15.6英寸游戏笔记本电脑(8G 1T+128G SSD 4G IPS 黑金)</p>
+                        <span>&yen;3980.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-07.jpg">
+                        <p>闪迪（SanDisk）酷铄(CZ73) USB3.0 金属U盘 32GB 读150MB/秒</p>
+                        <span>&yen;78.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-08.jpg">
+                        <p>原装苹果耳机 iPhone线控耳麦 iPhone耳机 iPhone6s/6Plus线控耳麦/苹果6s耳机</p>
+                        <span>&yen;188.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-09.jpg">
+                        <p>维达(Vinda) 抽纸 超韧3层130抽软抽*6包(小规格)</p>
+                        <span>&yen;12.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-10.jpg">
+                        <p>九洲鹿 被子被芯加厚秋冬羽丝绒被双人四季春秋盖被 思慕 200x230cm约6斤</p>
+                        <span>&yen;488.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-11.jpg">
+                        <p>美的（Midea）体脂称 智能健康秤 蓝牙脂肪秤 QQ微信兼容 不锈钢镜面 MW-S1 精致白</p>
+                        <span>&yen;268.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-12.jpg">
+                        <p>【进口优质皮料/】名夏新款双层拉链大双肩包时尚明星同款书包 竖拉链PU款</p>
+                        <span>&yen;145.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-13.jpg">
+                        <p>相宜本草男士精美2件套（男士洁面乳120g+男士乳液120g）护肤套装、清爽滋润、深层清洁</p>
+                        <span>&yen;48.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-14.jpg">
+                        <p>天堂伞 加大加固强力拒水一甩干三折商务伞3311E碰藏青色</p>
+                        <span>&yen;52.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-15.jpg">
+                        <p>丹尼尔惠灵顿 DW女表新款32mm金色边白盘金属表带 欧美简约风格学生手表时尚石英表</p>
+                        <span>&yen;1968.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-16.jpg">
+                        <p>三只松鼠_红杏干106gx2袋休闲零食果脯蜜饯水果干杏肉</p>
+                        <span>&yen;19.90</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-17.jpg">
+                        <p>瑞莱思抱枕被子两用 多功能汽车沙发靠垫空调夏凉被儿童幼儿园被午睡枕头车载腰靠 咖啡 40cm*40cm展开（105*150cm）</p>
+                        <span>&yen;17.50</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-18.jpg">
+                        <p>圣罗兰（YSL） YSL圣罗兰黑管唇釉407 409 新款黑管唇釉持久滋润显色ysl口红 401号</p>
+                        <span>&yen;278.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-19.jpg">
+                        <p>虎姿家纺 靠垫抱枕被子棉麻多功能夏凉被折叠两用汽车办公室午休靠垫卡通枕芯学生空调枕头被子 伦敦警察 折叠45cm*45cm展开105cm*155cm</p>
+                        <span>&yen;58.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-20.jpg">
+                        <p>蓝月亮 深层洁净护理洗衣液（薰衣草）1kg*2瓶 （新老包装随机发货）</p>
+                        <span>&yen;39.90</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-21.jpg">
+                        <p>雀巢（Nestle）休闲零食 夹心饼干 脆脆鲨 巧克力味威化 640g</p>
+                        <span>&yen;29.80</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-22.jpg">
+                        <p>良品铺子 阿胶无核蜜枣 休闲零食 蜜饯特产红枣子175g</p>
+                        <span>&yen;10.90</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-23.jpg">
+                        <p>富居(FOOJO)现代田园厨房地垫门垫 2条装</p>
+                        <span>&yen;79.00</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 more-product text-center">
+                    <a class="more-item">
+                        <img src="images/more/more-24.jpg">
+                        <p>溢彩年华 蓝色 时尚简易衣柜衣橱 布衣柜 DKB2-032</p>
+                        <span>&yen;69.00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="more.html" class="more-p text-right">更多好物>></a>
+    </div>
+    <!-- 更多产品 end-->
+    <!-- 合作伙伴 start-->
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-title text-center">
+                    <a href="">关于我们 |</a>
+                    <a href="">&nbsp;联系我们 |</a>
+                    <a href="">&nbsp;合作伙伴</a>
+                </div>
+                <div class="footer-content text-center">
+                    <span>计算机与信息工程学院</span>
+                    <span>计算机科学与技术2班</span>
+                    <span>马璐璐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 合作伙伴 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/main.js"></script>

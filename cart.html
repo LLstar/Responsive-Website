@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 顶部导航 start -->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="javascript:;" id="positionText">北京</a>
+                        <ul id="position">
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="javascript:;">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar">
+                            <li class="nav-item">特色主题
+                                <div>
+                                    <small>趣购金融</small><small>趣购会员</small>
+                                    <br>
+                                    <small>优惠券</small><small>陪伴计划</small>
+                                    <br>
+                                    <small>买什么</small><small>趣购秒杀</small>
+                                    <br>
+                                    <small>全球购</small><small>0元测评</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                    <small>家用电器</small><small>手机数码</small>
+                                    <br>
+                                    <small>精选家居</small><small>服装鞋包</small>
+                                    <br>
+                                    <small>美妆个护</small><small>食品生鲜</small>
+                                    <br>
+                                    <small>礼品鲜花</small><small>汽车用品</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                    <small>趣购金融</small><small>优惠券</small>
+                                    <br>
+                                    <small>话费</small><small>加油卡</small>
+                                    <br>
+                                    <small>火车票</small><small>旅游出行</small>
+                                    <br>
+                                    <small>电影票</small><small>酒店住宿</small>
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                    <small>合作招商</small><small>服装市场</small>
+                                    <br>
+                                    <small>企业采购</small><small>游戏社区</small>
+                                    <br>
+                                    <small>智能家居</small><small>知识产权</small>
+                                    <br>
+                                    <small>乡村招募</small><small>校园加盟</small>
+                                    <br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="javascript:;" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="javascript:;"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:;">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="register.html">免费注册</a>
+                                </li>
+                                <li><a href="javascript:;">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="javascript:;">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="javascript:;">企业采购</a></li>
+                                <li><a href="javascript:;">客户服务</a></li>
+                                <li><a href="javascript:;">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html">购物车</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">随便逛逛<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="javascript:;">家用电器</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">数码手机</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">电脑办公</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">家居厨具</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">服装鞋靴</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">美妆个护</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">钟表珠宝</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">运动户外</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">汽车用品</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">母婴玩具</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">食品生鲜</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">鲜花绿植</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">医药保健</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">图书音像</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">住宿旅游</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">理财保险</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部导航 end -->
+    <!-- 搜索框 start-->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 visible-lg visible-md text-left">
+                    <h1>我的购物车</h1>
+                </div>
+                <div class="col-md-offset-2 col-lg-6 col-md-6 visible-lg visible-md text-right">
+                    <!-- 搜索框 start-->
+                    <div class="input-group" style="margin-top: 25px;">
+                        <input type="text" class="form-control" placeholder="华为">
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- 搜索框 end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索框 end-->
+    <!-- 购物车商品 start-->
+    <div class="jd_view">
+        <div class="jd_safeTip">
+            <p>您正在安全购物环境中，请放心购物</p>
+        </div>
+        <!-- 商品 -->
+        <div class="jd_shop">
+            <div class="jd_shop_title">
+                <div class="title_check">
+                    <div class="jd_check_box"></div>
+                </div>
+                <div class="title_name clearfix">
+                    <span class="name">趣购自营</span>
+                    <span class="tip">您享受满79元免运费服务</span>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="jd_content">
+                <div class="content_check">
+                    <div class="jd_check_box"></div>
+                </div>
+                <div class="content_product clearfix">
+                    <a href="#" class="content_product_img"><img src="images/cart-01.jpg" alt=""></a>
+                    <div class="content_product_box">
+                        <a href="" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+                        <p class="price">¥4888.00</p>
+                        <div class="option clearfix">
+                            <div class="change_box clearfix">
+                                <span class="change_box_left sub">-</span>
+                                <input type="tel" value="0" class="num">
+                                <span class="change_box_right add">+</span>
+                            </div>
+                            <div class="delete_box">
+                                <div class="delete_box_top"></div>
+                                <div class="delete_box_bot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jd_content">
+                <div class="content_check">
+                    <div class="jd_check_box"></div>
+                </div>
+                <div class="content_product clearfix">
+                    <a href="#" class="content_product_img"><img src="images/cart-01.jpg" alt=""></a>
+                    <div class="content_product_box">
+                        <a href="" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+                        <p class="price">¥4888.00</p>
+                        <div class="option clearfix">
+                            <div class="change_box clearfix">
+                                <span class="change_box_left sub">-</span>
+                                <input type="tel" value="0" class="num">
+                                <span class="change_box_right add">+</span>
+                            </div>
+                            <div class="delete_box">
+                                <div class="delete_box_top"></div>
+                                <div class="delete_box_bot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品 -->
+        <div class="jd_shop">
+            <div class="jd_shop_title">
+                <div class="title_check">
+                    <div class="jd_check_box"></div>
+                </div>
+                <div class="title_name clearfix">
+                    <span class="name">趣购自营</span>
+                    <span class="tip">您享受满79元免运费服务</span>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="jd_content">
+                <div class="content_check">
+                    <div class="jd_check_box"></div>
+                </div>
+                <div class="content_product clearfix">
+                    <a href="#" class="content_product_img"><img src="images/cart-01.jpg" alt=""></a>
+                    <div class="content_product_box">
+                        <a href="" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+                        <p class="price">¥4888.00</p>
+                        <div class="option clearfix">
+                            <div class="change_box clearfix">
+                                <span class="change_box_left sub">-</span>
+                                <input type="tel" value="0" class="num">
+                                <span class="change_box_right add">+</span>
+                            </div>
+                            <div class="delete_box">
+                                <div class="delete_box_top"></div>
+                                <div class="delete_box_bot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jd_content">
+                <div class="content_check">
+                    <div class="jd_check_box checked"></div>
+                </div>
+                <div class="content_product clearfix">
+                    <a href="#" class="content_product_img"><img src="images/cart-01.jpg" alt=""></a>
+                    <div class="content_product_box">
+                        <a href="" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+                        <p class="price">¥4888.00</p>
+                        <div class="option clearfix">
+                            <div class="change_box clearfix">
+                                <span class="change_box_left sub">-</span>
+                                <input type="tel" value="0" class="num">
+                                <span class="change_box_right add">+</span>
+                            </div>
+                            <div class="delete_box">
+                                <div class="delete_box_top"></div>
+                                <div class="delete_box_bot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车商品 end-->
+    <!-- 底部结算 start-->
+    <div class="jd_amount">
+        <div class="amount_check">
+            <div class="jd_check_box"></div>
+            <span class="jd_check_label">全选</span>
+        </div>
+        <div class="amount_info">
+            <p class="sum">
+                合计:&yen;0.00
+            </p>
+            <p class="other">
+                总额:&yen;0.00 返现:&yen;0.00
+            </p>
+        </div>
+        <a href="" class="amount_submit">去结算(<span>0</span>)</a>
+    </div>
+    <!-- 底部结算 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+$(function() {
+    var sub = $('.sub');
+    var add = $('.add');
+    var num = $('.num');
+    var val = 0;
+
+    function Cart(ele, number, num) {
+        this.ele = ele;
+        this.number = number;
+        this.num = num;
+        this.onClick = function() {
+            var that = this
+            ele.each(function(index, item) {
+                val = parseInt($(that.num[index]).val());
+                $(item).on('click', function() {
+                    if (number < 0 && val == 0) {
+                        val = 0;
+                    } else {
+                        val = val + that.number;
+                    }
+
+                    $(that.num[index]).val(val)
+
+                })
+            })
+        }
+    }
+    var cartAdd = new Cart(add, 1, num);
+    var cartSub = new Cart(sub, -1, num);
+    cartAdd.onClick();
+    cartSub.onClick();
+})
+</script>

@@ -1,0 +1,34 @@
+h1 {
+    font-weight: 700;
+}
+
+body {
+    background-color: #c5dfd5;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+
+@media screen and (min-width:100px) and (max-width:768px) {
+    #pp-nav ul,
+    .pp-slidesNav ul {
+        display: none;
+    }
+}
+
+#login {}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    #login .container {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #login .container {
+        margin-top: 22%;
+    }
+}

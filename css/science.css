@@ -1,0 +1,108 @@
+//导航条
+#header #h-bottom {}
+
+#header #h-bottom .navbar {
+    margin-top: 35px;
+}
+
+//精选品牌
+#brand {}
+
+#brand .container {
+	margin-top: 20px;
+}
+
+//热门推荐
+#recommend {}
+
+#recommend .container {
+	background-color: rgba(107,142,35,.7);
+}
+
+#recommend .container .thumbnail .caption h3 {
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+#recommend h4 {
+	margin-top: 0;
+	color: #f10215;
+}
+
+#recommend p {
+	height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#recommend ul {
+	list-style: none;
+}
+
+#recommend ul li {
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+#recommend .thumbnail:hover img {
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+	transition: transform 0.65s;
+}
+
+#recommend .thumbnail h3 {
+	/*height: 40px;*/
+	/*line-height: 40px;*/
+} 
+
+//精品分类
+#products {}
+
+#products .container h3 {
+	margin-top: 50px;
+}
+
+#products .container .row .house {
+	background-color: #fff;
+}
+
+#products .products-img {
+	padding: 0;
+	background-color: #fff;
+}
+
+#products .nav-tabs > li > a {
+    margin-right: 50px;
+}
+
+#products .tab-content {
+	margin-top: 10px;
+}
+
+#products .tab-content p {
+	margin-top: 10px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+#products .tab-content a {
+	text-decoration: none;
+	color: #333;
+}
+
+#products .tab-content a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+#products .tab-content h4 {
+	color: #f10215;
+	font-weight: 600;
+}
+
+#products .container .row .house img {
+	width: 100px;
+	height: 100px;
+}

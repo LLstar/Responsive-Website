@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>爱生活</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/life.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 雪花飘落背景 start-->
+    <div class="snow-container"></div>
+    <!-- 雪花飘落背景 end-->
+    <!-- 顶部菜单 start-->
+    <div id="top">
+        <div class="topBar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 text-center t-position">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <a href="" id="positionText">北京</a>
+                        <ul id="position"> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="login.html"><i class="glyphicon glyphicon-user"></i>登录</a>&nbsp;
+                        <a href="register.html">免费注册</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">我的订单</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="index.html">我的趣购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">趣购会员</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">企业采购</a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="">客户服务</a>
+                    </div>
+                    <div class="col-md-1 text-center" id="navBar">
+                        <a href="">网站导航<i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="nav-bar">
+                            <li class="nav-item">特色主题
+                                <div>
+                                   <small>趣购金融</small><small>趣购会员</small><br>
+                                   <small>优惠券</small><small>陪伴计划</small><br>
+                                   <small>买什么</small><small>趣购秒杀</small><br>
+                                   <small>全球购</small><small>0元测评</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">行业频道
+                                <div>
+                                   <small>家用电器</small><small>手机数码</small><br>
+                                   <small>精选家居</small><small>服装鞋包</small><br>
+                                   <small>美妆个护</small><small>食品生鲜</small><br>
+                                   <small>礼品鲜花</small><small>汽车用品</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">生活服务
+                                <div>
+                                   <small>趣购金融</small><small>优惠券</small><br>
+                                   <small>话费</small><small>加油卡</small><br>
+                                   <small>火车票</small><small>旅游出行</small><br>
+                                   <small>电影票</small><small>酒店住宿</small><br>
+                                </div>
+                            </li>
+                            <li class="nav-item">更多精选
+                                <div>
+                                   <small>合作招商</small><small>服装市场</small><br>
+                                   <small>企业采购</small><small>游戏社区</small><br>
+                                   <small>智能家居</small><small>知识产权</small><br>
+                                   <small>乡村招募</small><small>校园加盟</small><br>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <a href="" class="mobile-link">手机趣购<i class="glyphicon glyphicon-phone"></i>
+                            <img src="images/01.png" alt="扫一扫">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航面板 start-->
+        <nav class="navbar navbar-inverse visible-sm visible-xs">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="glyphicon glyphicon-map-marker"></i>北京 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的趣购</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">你好,请登录</a>
+                                    <a href="">免费注册</a>
+                                </li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="index.html">我的趣购</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">趣购会员</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">企业采购</a></li>
+                                <li><a href="">客户服务</a></li>
+                                <li><a href="">网站导航</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">购物车</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">爱"尚"美<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">服装鞋靴</a>
+                                </li>
+                                <li>
+                                    <a href="">珠宝腕表</a>
+                                </li>
+                                <li>
+                                    <a href="">箱包配饰</a>
+                                </li>
+                                <li>
+                                    <a href="">运动户外</a>
+                                </li>
+                                <li>
+                                    <a href="">美妆个护</a>
+                                </li>
+                                <li>
+                                    <a href="">洗发护发</a>
+                                </li>
+                                <li>
+                                    <a href="">口腔护理</a>
+                                </li>
+                                <li>
+                                    <a href="">香水彩妆</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 顶部导航菜单 end-->
+    </div>
+    <!-- 顶部菜单 end-->
+    <!-- 导航条 start-->
+    <div id="header">
+        <div id="h-top" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-lg-6 col-md-6 visible-lg visible-md text-center">
+                        <!-- 搜索框 start-->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="华为">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                        <!-- 搜索框 end-->
+                        <!-- 热门词汇 start -->
+                        <div class="hotwords">
+                            <ul>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">海鲜水产</a></li>
+                                <li><a href="">约会圣诞</a></li>
+                                <li><a href="">精选肉类</a></li>
+                                <li><a href="">休闲零食</a></li>
+                                <li><a href="">图书钜惠</a></li>
+                                <li class="hidden-md"><a href="">时间简史</a></li>
+                                <li class="hidden-md"><a href="">陪伴计划</a></li>
+                            </ul>
+                        </div>
+                        <!-- 热门词汇 end -->
+                    </div>
+                    <!-- 购物车 start -->
+                    <div class=" text-center visible-md visible-lg" id="cart">
+                        <a href="cart.html">
+                            <button class="btn btn-danger" type="button">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                                <span class="badge" style="position: static;">4</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- 购物车 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航条 end-->
+    <!-- 轮播图 start-->
+    <div id="silder">
+        <div class="container">
+            <div class="row">
+                <!-- 左侧导航 start-->
+                <div class="col-md-2 col-lg-2 col-sm-3 hidden-xs
+                  text-left" id="silder-lf">
+                    <ul class="silder_list">
+                        <li>
+                            <a href="">食品饮料</a>
+                            <br>
+                            <small>休闲零食&nbsp;牛奶&nbsp;饮料</small>
+                        </li>
+                        <li>
+                            <a href="">海鲜水产</a>
+                            <br>
+                            <small>海鲜礼盒&nbsp;鱼类&nbsp;虾类</small>
+                        </li>
+                        <li>
+                            <a href="">冷冻饮食</a>
+                            <br>
+                            <small>酸奶&nbsp;饺子&nbsp;元宵</small>
+                        </li>
+                        <li>
+                            <a href="">粮油副食</a>
+                            <br>
+                            <small>食用油&nbsp;米面&nbsp;调味料</small>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="">文学图书</a>
+                            <br>
+                            <small class="hidden-sm">小说&nbsp;文学&nbsp;传记</small>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <a href="">儿童图书</a>
+                            <br>
+                            <small>幼儿启蒙&nbsp;动漫卡通</small>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <a href="">人文科学</a>
+                            <br>
+                            <small class="hidden-md">国学古籍&nbsp;历史&nbsp;科普</small>
+                        </li>
+                        <li class="hidden-md hidden-sm hidden-xs">
+                            <a href="">经管综合</a>
+                            <br>
+                            <small>管理&nbsp;经济&nbsp;投资</small>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 左侧导航 end-->
+                <!-- 广告轮播 start-->
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 text-center" id="silder_ad">
+                    <div id="main_ad" class="carousel slide" data-ride="carousel">
+                        <!-- 小圆点 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+                            <li data-target="#main_ad" data-slide-to="1"></li>
+                            <li data-target="#main_ad" data-slide-to="2"></li>
+                        </ol>
+                        <!-- 轮播图 -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/life-01.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/life-02.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/life-03.jpg" alt="...">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 控制项 -->
+                        <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 广告轮播 end-->
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 end-->
+    <!-- 品牌特卖 start-->
+    <div id="brand">
+        <div class="container">
+            <h3>品牌特卖</h3>
+            <div class="row">
+                <div class="col-lg-4 visible-lg">
+                    <img src="images/life-04.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-05.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-06.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-07.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-08.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-09.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <img src="images/life-10.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+                    <img src="images/life-11.jpg">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+                    <img src="images/life-12.jpg">
+                </div>
+                <div class="col-lg-4 visible-lg">
+                    <img src="images/life-13.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 品牌特卖 end-->
+    <!-- 粮油调味 start-->
+    <div id="oil">
+        <div class="container">
+            <h3>粮油调味</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-01.jpg">
+                    <p class="oil-detail">福临门 东北大米 秋田小町 中粮出品 大米 5kg（新老包装交替）</p>
+                    <span class="pull-left oil-money">¥32.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-02.jpg">
+                    <p class="oil-detail">福临门 食用油 非转基因压榨玉米油（京东定制）6.18L 中粮出品</p>
+                    <span class="pull-left oil-money">¥75.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-03.jpg">
+                    <p class="oil-detail">西王 玉米胚芽油 非转基因压榨食用油 京东定制款6.18L</p>
+                    <span class="pull-left oil-money">¥99.00</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-04.jpg">
+                    <p class="oil-detail">方家铺子 湘潭 莲子 去皮磨皮通芯湘莲子250g 银耳枸杞子莲子羹 白莲子（新旧包装随机发货）</p>
+                    <span class="pull-left oil-money">¥22.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-05.jpg">
+                    <p class="oil-detail">金龙鱼 食用油 原料欧洲进口 物理压榨 阳光葵花籽油5L+送400ml</p>
+                    <span class="pull-left oil-money">¥69.80</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-06.jpg">
+                    <p class="oil-detail">绿帝 无核桂圆肉 福建莆田特产 桂圆干 龙眼肉 龙眼干罐装480g</p>
+                    <span class="pull-left oil-money">¥49.80</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-07.jpg">
+                    <p class="oil-detail">味事达(Master)味极鲜酿造酱油1.9L</p>
+                    <span class="pull-left oil-money">¥20.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-08.jpg">
+                    <p class="oil-detail">中裕 ZHONGYU 中筋面粉 原味小麦粉 馒头粉 包子水饺通用粉 10kg</p>
+                    <span class="pull-left oil-money">¥59.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-09.jpg">
+                    <p class="oil-detail">宁安堡 宁夏枸杞 特级500g 枸杞子 独立小袋装</p>
+                    <span class="pull-left oil-money">¥39.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-10.jpg">
+                    <p class="oil-detail">舒可曼优级白砂糖 白糖908g 碳化糖细砂糖 烘焙原料 调料调味品</p>
+                    <span class="pull-left oil-money">¥13.50</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-11.jpg">
+                    <p class="oil-detail">【中华老字号】海天 上等蚝油 替代鸡精味精烧烤蘸料耗油勾芡拌面炒菜火锅调料调味料 2.27kg</p>
+                    <span class="pull-left oil-money">¥25.00</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 oil-title">
+                    <img src="images/oil-12.jpg">
+                    <p class="oil-detail">【折后49.9/袋】北大荒鲜香稻花香米10斤 东北稻花香新磨大米粳米 5kg</p>
+                    <span class="pull-left oil-money">¥56.90</span>
+                    <a class="oil-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 粮油调味 end-->
+    <!-- 牛奶水饮 start-->
+    <div id="milk">
+        <div class="container">
+            <h3>牛奶水饮</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-01.jpg">
+                    <p class="milk-detail">【24盒装】蒙牛 纯甄 常温酸牛奶 200g*24 礼盒装</p>
+                    <span class="pull-left milk-money">¥99.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-02.jpg">
+                    <p class="milk-detail">德国 进口牛奶 欧德堡（Oldenburger）超高温处理全脂纯牛奶1L*12</p>
+                    <span class="pull-left milk-money">¥119.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-03.jpg">
+                    <p class="milk-detail">【24盒装】德国进口酸奶 德亚（Weidendorf）200ml*24 整箱装</p>
+                    <span class="pull-left milk-money">¥99.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-04.jpg">
+                    <p class="milk-detail">【中华老字号】光明 莫斯利安 常温酸牛奶（原味）200g*24家庭装</p>
+                    <span class="pull-left milk-money">¥82.90</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-05.jpg">
+                    <p class="milk-detail">2018新茶上市 卢正浩 茶叶绿茶 明前特级西湖龙井茶春茶（匠心 301211）200g</p>
+                    <span class="pull-left milk-money">¥368.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-06.jpg">
+                    <p class="milk-detail">红牛维生素功能饮料250ml*24罐 整箱</p>
+                    <span class="pull-left milk-money">¥139.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-07.jpg">
+                    <p class="milk-detail">维他奶 原味豆奶植物蛋白饮料 250ml*16盒 整箱</p>
+                    <span class="pull-left milk-money">¥39.80</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-08.jpg">
+                    <p class="milk-detail">宝矿力水特（POCARI SWEAT）宝矿力水特500ml*24瓶 整箱</p>
+                    <span class="pull-left milk-money">¥90.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-09.jpg">
+                    <p class="milk-detail">康师傅饮料 冰红茶 小黄人新年装柠檬味 250ml*15盒 整箱</p>
+                    <span class="pull-left milk-money">¥14.90</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-10.jpg">
+                    <p class="milk-detail">圣牧 巴氏杀菌常温有机酸牛奶205g*12钻石装/礼盒装</p>
+                    <span class="pull-left milk-money">¥46.90</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-11.jpg">
+                    <p class="milk-detail">华简 茶叶 花草茶 蒲公英茶花茶 婆婆丁 蒲公英根叶茶 60g（30g*2罐）</p>
+                    <span class="pull-left milk-money">¥29.00</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 milk-title">
+                    <img src="images/milk-12.jpg">
+                    <p class="milk-detail">屈臣氏苏打汽水混合口味（苏打汽水20罐+香草味苏打汽水4罐）330mlx24</p>
+                    <span class="pull-left milk-money">¥87.90</span>
+                    <a class="milk-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 牛奶水饮 end-->
+    <!-- 休闲零食 start-->
+    <div id="sock">
+        <div class="container">
+            <h3>休闲零食</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-01.jpg">
+                    <p class="sock-detail">三只松鼠 肉干肉脯 零食休闲食品猪肉脯210g/袋</p>
+                    <span class="pull-left sock-money">¥19.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-02.jpg">
+                    <p class="sock-detail">双汇 火腿肠 王中王火腿肠 60g*10支装</p>
+                    <span class="pull-left sock-money">¥17.80</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-03.jpg">
+                    <p class="sock-detail">旺旺 旺仔 O泡果奶礼盒  草莓味 125ml*32</p>
+                    <span class="pull-left sock-money">¥59.30</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-04.jpg">
+                    <p class="sock-detail">良品铺子 肉松饼1140g早餐饼干糕点面包点心办公室零食休闲食品</p>
+                    <span class="pull-left sock-money">¥32.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-05.jpg">
+                    <p class="sock-detail">达利园精选蛋黄注心派 营养早餐零食面包饼干蛋糕 2.5kg（新老包装随机发货）</p>
+                    <span class="pull-left sock-money">¥49.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-06.jpg">
+                    <p class="sock-detail">淘豆（TAODO）华夫面包牛奶味1000g手撕面包早餐 手撕棒软面包 口袋糕点休闲零食</p>
+                    <span class="pull-left sock-money">¥30.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-07.jpg">
+                    <p class="sock-detail">好想你 蜜饯果干 量贩礼盒装 免洗红枣 妈妈的味道1500g/盒</p>
+                    <span class="pull-left sock-money">¥75.00</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-08.jpg">
+                    <p class="sock-detail">徐福记 小叭叭 卷心酥 注心饼干 休闲零食下午茶点心 婚庆喜糖脱单装425g</p>
+                    <span class="pull-left sock-money">¥27.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-09.jpg">
+                    <p class="sock-detail">星搭档 华夫软撕派面包1000g奶昔味 营养早餐西式下午茶糕点整箱装</p>
+                    <span class="pull-left sock-money">¥39.90</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-10.jpg">
+                    <p class="sock-detail">ileven 每日坚果 休闲零食 混合果仁 坚果礼盒2250g/盒</p>
+                    <span class="pull-left sock-money">¥279.00</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-11.jpg">
+                    <p class="sock-detail">奥利奥Oreo早餐休闲零食蛋糕糕点巧克棒提拉米苏风味27条+9条460.8g</p>
+                    <span class="pull-left sock-money">¥21.70</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 sock-title">
+                    <img src="images/sock-12.jpg">
+                    <p class="sock-detail">稻香村 糕点点心礼盒 万事如意1468g</p>
+                    <span class="pull-left sock-money">¥138.00</span>
+                    <a class="sock-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 休闲零食 end-->
+    <!-- 时令生鲜 start-->
+    <div id="fresh">
+        <div class="container">
+            <h3>时令生鲜</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-01.jpg">
+                    <p class="fresh-detail">越南进口红心火龙果 4个装 单果约350~400g 新鲜水果</p>
+                    <span class="pull-left fresh-money">¥43.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-02.jpg">
+                    <p class="fresh-detail">江西名牌 杨氏精品脐橙 5kg装 钻石果 水果橙子礼盒 2种包装随机发</p>
+                    <span class="pull-left fresh-money">¥59.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-03.jpg">
+                    <p class="fresh-detail">福建六鳌红薯 蜜薯 地瓜 约2.5kg 量贩礼盒装</p>
+                    <span class="pull-left fresh-money">¥29.80</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-04.jpg">
+                    <p class="fresh-detail">广西沃柑 柑橘2.5kg 新鲜水果</p>
+                    <span class="pull-left fresh-money">¥46.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-05.jpg">
+                    <p class="fresh-detail">展卉 泰国椰青 9个装 单果约750g 赠送开椰器和吸管 新鲜水果</p>
+                    <span class="pull-left fresh-money">¥85.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-06.jpg">
+                    <p class="fresh-detail">新奇士Sunkist 美国进口脐橙12个装 单果重约160-190g 新鲜水果</p>
+                    <span class="pull-left fresh-money">¥39.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-07.jpg">
+                    <p class="fresh-detail">新奇士Sunkist 美国进口晚熟脐橙 4kg装 单果重约300-400g 新鲜水果</p>
+                    <span class="pull-left fresh-money">¥59.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-08.jpg">
+                    <p class="fresh-detail">梅珍 海南中国红莲雾1kg 三亚新鲜水果</p>
+                    <span class="pull-left fresh-money">¥26.80</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-09.jpg">
+                    <p class="fresh-detail">四川双流新鲜草莓水果1000g 巧克力草莓 顺丰空运</p>
+                    <span class="pull-left fresh-money">¥79.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-10.jpg">
+                    <p class="fresh-detail">聚怀斋 焦作温县沙土铁棍山药 3kg 礼盒装 新鲜蔬菜</p>
+                    <span class="pull-left fresh-money">¥49.90</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-11.jpg">
+                    <p class="fresh-detail">【蒲江馆】四川蒲江黄心猕猴桃 12个装 单果95-120g</p>
+                    <span class="pull-left fresh-money">¥19.80</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 fresh-title">
+                    <img src="images/fresh-12.jpg">
+                    <p class="fresh-detail">创晟 泰国进口金枕头榴莲水果约2.5-3.5kg</p>
+                    <span class="pull-left fresh-money">¥218.00</span>
+                    <a class="fresh-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 时令生鲜 end-->
+    <!-- 特色书店 start-->
+    <div id="special">
+        <div class="container">
+            <h3>特色书店</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-01.jpg">
+                    <p class="special-detail">0-3岁宝宝经典睡前故事（套装共16册）</p>
+                    <span class="pull-left special-money">¥88.30</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-02.jpg">
+                    <p class="special-detail">海润阳光·幼儿学前专注力训练100图（套装共4册）</p>
+                    <span class="pull-left special-money">¥35.30</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-03.jpg">
+                    <p class="special-detail">小猪佩奇双语故事纸板书：我爸爸+我妈妈+我奶奶+我爷爷（套装共4册）</p>
+                    <span class="pull-left special-money">¥55.20</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-04.jpg">
+                    <p class="special-detail">凯迪克银奖绘本：暴风雨中的孩子（奇想国童书）</p>
+                    <span class="pull-left special-money">¥22.60</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-05.jpg">
+                    <p class="special-detail">自我保护意识培养第1辑:我不跟你走+别想欺负我（套装全2册 2016版）</p>
+                    <span class="pull-left special-money">¥41.30</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-06.jpg">
+                    <p class="special-detail">海豚绘本花园：神奇小孩系列（全3册）</p>
+                    <span class="pull-left special-money">¥67.20</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-07.jpg">
+                    <p class="special-detail">乐高未来骑士团：魔兽之书</p>
+                    <span class="pull-left special-money">¥51.70</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-08.jpg">
+                    <p class="special-detail">新版丁丁历险记 大开本经典收藏版（套装22册）</p>
+                    <span class="pull-left special-money">¥347.60</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-09.jpg">
+                    <p class="special-detail">阿凡提故事漫画版合辑（开心、讽刺、智慧故事全三册）</p>
+                    <span class="pull-left special-money">¥70.20</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-10.jpg">
+                    <p class="special-detail">给孩子读诗</p>
+                    <span class="pull-left special-money">¥55.80</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-11.jpg">
+                    <p class="special-detail">任溶溶注音系列 没头脑和不高兴+大大大和小小小历险记+土土的故事（套装全3册）</p>
+                    <span class="pull-left special-money">¥28.90</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 special-title">
+                    <img src="images/special-12.jpg">
+                    <p class="special-detail">故宫里的大怪兽（套装全6册）</p>
+                    <span class="pull-left special-money">¥122.80</span>
+                    <a class="special-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 特色书店 end-->
+    <!-- 家居生活 start-->
+    <div id="home">
+        <div class="container">
+            <h3>家居生活</h3>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-01.jpg">
+                    <p class="home-detail">日本进口虎牌（Tiger）梦重力轻巧弹盖不锈钢保温杯壶 真空户外水杯 男女车载杯子MMJ A048KA深蓝色480ml</p>
+                    <span class="pull-left home-money">¥169.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-02.jpg">
+                    <p class="home-detail">酷趣coqui 四季情侣家居浴室拖鞋 居家简约软底沙滩洗澡凉拖鞋男款 深蓝色42-43码 CQ5071</p>
+                    <span class="pull-left home-money">¥17.80</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-03.jpg">
+                    <p class="home-detail">艺柳园 旋转藤椅三件套 阳台户外桌椅茶几五件套 庭院休闲藤条椅子腾椅藤制 防水防晒 一桌两椅条纹棕色</p>
+                    <span class="pull-left home-money">¥449.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-04.jpg">
+                    <p class="home-detail">冠能（PRO PLAN）狗粮 中型犬 成犬犬粮 柴犬哈士奇 拉布拉多边牧喜乐蒂柯基箱装15kg( 500g*30)</p>
+                    <span class="pull-left home-money">¥579.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-05.jpg">
+                    <p class="home-detail">同仁堂 破壁灵芝孢子粉胶囊0.35g*90粒（2瓶装）</p>
+                    <span class="pull-left home-money">¥1778.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-06.jpg">
+                    <p class="home-detail">美乐佳 强力挂钩 20枚 无痕粘钩任意贴（图案随机）</p>
+                    <span class="pull-left home-money">¥39.90</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-07.jpg">
+                    <p class="home-detail">美瓷（MYCERA）陶瓷刀具套装五件套 切菜刀 切片肉刀 水果刀（黑刀黑柄）TE04B-B</p>
+                    <span class="pull-left home-money">¥149.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-08.jpg">
+                    <p class="home-detail">INTERIGHT丝袜女 加裆高弹丝袜连裤袜2双盒装 黑色</p>
+                    <span class="pull-left home-money">¥59.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-09.jpg">
+                    <p class="home-detail">INTERIGHT丝袜女 美肤高透水晶丝丝袜短袜10双盒装 肤色</p>
+                    <span class="pull-left home-money">¥39.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-10.jpg">
+                    <p class="home-detail">梦桥 B&D 婚庆用品婚房气球装饰套餐生日气球求婚布置 结婚粉色气球套装</p>
+                    <span class="pull-left home-money">¥99.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-11.jpg">
+                    <p class="home-detail">FOOJO富居  编织沙发垫扶手巾 镜水湖光 50*50cm 两条装</p>
+                    <span class="pull-left home-money">¥29.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 home-title">
+                    <img src="images/home-12.jpg">
+                    <p class="home-detail">海洋之星（HYZX）三文鱼6kg 海洋之星三文鱼猫粮成幼猫美毛全年龄无谷天然粮6kg</p>
+                    <span class="pull-left home-money">¥450.00</span>
+                    <a class="home-cart pull-right glyphicon glyphicon-shopping-cart"></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 家居生活 end-->
+    <!-- 合作伙伴 start-->
+    <div id="footer">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="footer-title text-center">
+                    <a href="">关于我们 |</a>
+                    <a href="">&nbsp;联系我们 |</a>
+                    <a href="">&nbsp;合作伙伴</a>
+                </div>
+                <div class="footer-content text-center">
+                    <span>计算机与信息工程学院</span>
+                    <span>计算机科学与技术2班</span>
+                    <span>马璐璐</span>
+                </div>
+           </div>
+       </div> 
+    </div>
+    <!-- 合作伙伴 end-->
+    <!-- 回到顶部 start-->
+    <div id="gotop" class="top">
+        <span class="glyphicon glyphicon-chevron-up text-center"></span>
+        <p class="goTop">回到顶部</p>
+    </div>
+    <!-- 回到顶部 end-->
+</body>
+
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
