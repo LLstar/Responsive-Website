@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>登录界面</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
@@ -10,70 +12,72 @@
 </head>
 
 <body>
-    <div class="hidden-xs" id="pagepiling">
-        <div class="section" id="section1">
+    <div id="pagepiling">
+        <div class="section hidden-xs" id="section1">
             <div class="container">
                 <div class="row">
-                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady01.png">
+                    <img class="pull-left col-md-5 col-sm-5" src="images/lady01.png">
                     <h1 class="hidden-xs">随时随地 一键购物</h1>
-                    <span class="hidden-xs">妈妈再也不用担心我抢不到货了！</span>
+                    <span>妈妈再也不用担心我抢不到货了！</span>
                 </div>
             </div>
         </div>
-        <div class="section" id="section2">
+        <div class="section hidden-xs" id="section2">
             <div class="container">
                 <div class="row">
-                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady02.png">
-                    <h1 class="hidden-xs">专项特卖 惊喜不停</h1>
-                    <span class="hidden-xs">不用担心，品牌特卖等着你！</span>
+                    <img class="pull-left col-md-5 col-sm-5" src="images/lady02.png">
+                    <h1>专项特卖 惊喜不停</h1>
+                    <span>不用担心，品牌特卖等着你！</span>
                 </div>
             </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section hidden-xs" id="section3">
             <div class="container">
                 <div class="row">
-                    <img class="pull-left col-md-5 col-sm-5 hidden-xs" src="images/lady03.png">
-                    <h1 class="hidden-xs">随时随地 查看物流</h1>
-                    <span class="hidden-xs">今天的包裹到哪儿了？</span>
+                    <img class="pull-left col-md-5 col-sm-5" src="images/lady03.png">
+                    <h1>随时随地 查看物流</h1>
+                    <span>今天的包裹到哪儿了？</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="pull-right col-md-7 col-sm-7 col-xs-12" id="login" style="margin-top: 20%;z-index: 999;">
+    <div class="pull-right col-md-7 col-sm-7 col-xs-12" id="login" style="z-index: 999;">
         <div class="container">
-            <div class="col-md-6 col-sm-6">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputName" class="col-sm-3 control-label"><span class="glyphicon glyphicon-user"></span>用户名:</label>
-                        <div class="col-sm-9">
-                            <input type="textname" class="form-control" id="inputName" placeholder="name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword" class="col-sm-3 control-label"><span class="glyphicon glyphicon-lock"></span>密码:</label>
-                        <div class="col-sm-9">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-9">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">记住用户名
-                                </label>
-                                <label class="pull-right">
-                                    <a href="register.html"> 免费注册 </a>
-                                </label>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12" id="form">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-3 control-label"><span class="glyphicon glyphicon-user"></span>用户名:</label>
+                            <div class="col-sm-9">
+                                <input type="textname" class="form-control" id="inputName" placeholder="name">
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-9">
-                            <button type="submit" class="btn btn-danger btn-md" id="loginBtn">&nbsp;&nbsp;登录&nbsp;&nbsp;</button>
-                            <a class="btn btn-success btn-md pull-right" href="index.html" role="button">&nbsp;&nbsp;返回首页&nbsp;&nbsp;</a>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-3 control-label"><span class="glyphicon glyphicon-lock"></span>密码:</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">记住用户名
+                                    </label>
+                                    <label class="pull-right">
+                                        <a href="register.html"> 免费注册 </a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-danger btn-md" id="loginBtn">&nbsp;&nbsp;登录&nbsp;&nbsp;</button>
+                                <a class="btn btn-success btn-md pull-right" href="index.html" role="button">&nbsp;返回首页&nbsp;</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -81,15 +85,12 @@
 
 </html>
 <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('#pagepiling').pagepiling({
         sectionsColor: ['#c5dfd5', '#c5dfd5', '#c5dfd5'],
-        navigation: {
-            'position': 'right',
-            'tooltips': ['一键购物', '惊喜不断', '查看物流']
-        }
     });
 
     // 登录验证
@@ -97,7 +98,7 @@ $(document).ready(function() {
     var username = $('#inputName');
     var password = $('#inputPassword');
     var userText, passText, flag = true;
-    console.log(username.length);
+    // console.log(username.length);
 
     loginBtn.on('click', function() {
         userText = $('#inputName').val();

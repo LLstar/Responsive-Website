@@ -1,5 +1,6 @@
 h1 {
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 body {
@@ -10,25 +11,66 @@ span {
     font-size: 18px;
     font-weight: 700;
     color: #666;
+    margin-bottom: 10px;
 }
+
+#pagepiling {}
 
 @media screen and (min-width:100px) and (max-width:768px) {
     #pp-nav ul,
     .pp-slidesNav ul {
         display: none;
     }
-}
-
-#login {}
-
-@media screen and (min-width:992px) and (max-width:1200px) {
-    #login .container {
-        margin-top: 5%;
+    #pagepiling .section {
+        display: none;
     }
 }
+
+#login {
+        top: 50%;
+        height: 100%;
+        margin-top: 0%;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        margin-left: -15%;
+    }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-    #login .container {
-        margin-top: 22%;
+    #login {
+        top: 50%;
+        height: 100%;
+        margin-top: -5%;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        margin-left: -15%;
     }
 }
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    #login {
+        top: 50%;
+        height: 100%;
+        margin-top: -5%;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        margin-left: -15%;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:768px) {
+    #login {
+        top: 50%;
+        height: 100%;
+        margin-top: -25%;
+        width: 100%;
+        left: 0%;
+        margin-left: 0%;
+    }
+    #form {
+        width: 100%;
+    }
+}
+

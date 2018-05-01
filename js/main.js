@@ -63,7 +63,7 @@ window.onload = function() {
 
 
 
-    //回到顶部kkk
+    //回到顶部
 
     function show(obj) { obj.style.display = "block"; }
 
