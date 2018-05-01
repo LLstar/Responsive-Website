@@ -1,4 +1,4 @@
-window.onload = function() {
+$(function(){
     secondKill();
     //秒杀倒计时
     function secondKill() {
@@ -23,5 +23,6 @@ window.onload = function() {
             timeList[2].innerHTML = s < 10 ? '0' + s : s;
 
         }, 1000)
+        // console.log(111);
     }
-}
+});
